@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GOOGLE SEO -->
+  <title>Fatima Islamic Academy | Online Quran Classes with Tajweed | 3 Days Free Trial</title>
+  <meta name="description" content="Join Fatima Islamic Academy for Online Quran Classes. Learn Noorani Qaida, Quran with Tajweed, Hifz, Tafseer & Arabic. 1000+ Students from 50+ Countries. Book 3 Days Free Trial Today!">
+  <meta name="keywords" content="online quran academy, learn quran online, quran classes for kids, noorani qaida online, hifz quran online, tafseer course, arabic classes online">
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <style>
+    :root { 
+      --blue: #1a3b73; 
+      --light-blue: #2f5aa3; 
+      --gold: #c9a227; 
+    }
+    body { 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      margin: 0; 
+      background: var(--blue); 
+      color: #fff; 
+    }
+    header { 
+      background: var(--blue); 
+      padding: 20px; 
+      text-align: center; 
+      border-bottom: 3px solid var(--gold); 
+    }
+    header h1 { 
+      color: var(--gold); 
+    }
+    .container { 
+      padding: 60px 20px; 
+      max-width: 1200px; 
+      margin: auto; 
+    }
+    h2 { 
+      text-align: center; 
+      color: var(--gold); 
+      font-size: 2.2em; 
+      margin-bottom: 40px; 
+    }
+    .courses { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 25px; 
+    }
+    .course-card { 
+      background: var(--light-blue); 
+      border-radius: 15px; 
+      border: 2px solid var(--gold); 
+      overflow: hidden; 
+    }
+    input, select, textarea { 
+      width: 100%; 
+      padding: 15px; 
+      margin: 10px 0; 
+      border-radius: 10px; 
+      border: 2px solid #4a70b0;
+    }
+    button { 
+      width: 100%; 
+      padding: 18px; 
+      background: var(--gold); 
+      color: var(--blue); 
+      font-weight: bold; 
+      border: none; 
+      border-radius: 10px; 
+      font-size: 1.2em; 
+    }
+    footer { 
+      background: #15305c; 
+      padding: 50px 20px; 
+      text-align: center; 
+      border-top: 3px solid var(--gold); 
+    }
+    /* WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo" style="width:90px;">
+  <h1>FATIMA ISLAMIC ACADEMY</h1>
+  <p>LEARN ISLAM • LIVE ISLAM • TEACH ISLAM</p>
+</header>
+  <!-- HEADER WITH WHATSAPP NUMBER -->
+<header style="background: var(--blue); padding:40px 20px; text-align:center; border-bottom:3px solid var(--gold);">
+  <img src="logo.png" alt="Logo" style="width:120px; margin-bottom:15px;">
+  
+  <h1 style="color:var(--gold); font-size:2.8em; margin:10px 0;">FATIMA ISLAMIC ACADEMY</h1>
+  
+  <p style="color:#fff; font-size:1.2em; margin-bottom:20px;">
+    LEARN ISLAM • LIVE ISLAM • TEACH ISLAM
+  </p>
+
+  <!-- WHATSAPP NUMBER BUTTON -->
+  <a href="https://wa.me/923130934215" target="_blank" 
+     style="display:inline-block; background: #25D366; color:#fff; padding:14px 30px; 
+            font-size:1.2em; font-weight:bold; text-decoration:none; border-radius:50px; 
+            box-shadow:0 4px 15px rgba(37,211,102,0.4);">
+    📞 WhatsApp: +92 313 0934215
+  </a>
+  
+</header>
+
+<!-- 1. 6 COURSES WITH PICTURES -->
+<section class="container">
+  <h2>Our Programs</h2>
+  <div class="courses">
+    <div class="course-card">
+      <img src="qaida.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Learn Noorani Qaida</h3>
+        <p>Start reading the Quran correctly with proper pronunciation.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="course-card">
+      <img src="quran.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Quran Reading with Tajweed</h3>
+        <p>Master the rules of Tajweed for beautiful recitation.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="hifz.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Memorize Quran Online</h3>
+        <p>Memorize with personalized Hifz plans and teachers.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="tafseer.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Learn Tafseer and translation Online</h3>
+        <p>Gain deep insights into the meanings of Holy Quran.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="arabic.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Learn Arabic Online</h3>
+        <p>Arabic Language & Grammar for kids and adults.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="islamic.jpg" style="width:100%; height:220px; object-fit:cover;">
+      <div style="padding:20px;">
+        <h3>Islamic Studies Online</h3>
+        <p>Daily Dua's, Sunnah, Seerah and basic Fiqh.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#student-form" style="flex:1; padding:12px; background:#2f5aa3; color:#fff; text-align:center; border-radius:8px; text-decoration:none; border:1px solid var(--gold);">Details</a>
+          <a href="https://wa.me/923130934215" target="_blank" style="flex:1; padding:12px; background:var(--gold); color:var(--blue); font-weight:bold; text-align:center; border-radius:8px; text-decoration:none;">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- PROFESSIONAL REGULAR COURSES -->
+<section class="container">
+  <h2 style="text-align:center; color:var(--gold); font-size:2.8em; margin-bottom:40px;">Our Regular Courses</h2>
+  
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:25px;">
+    
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border-left:5px solid var(--gold); transition:0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+      <h3 style="color:var(--gold); margin-bottom:10px;">📖 Learn Noorani Qaida Online</h3>
+      <p>Foundation course for perfect Quran recitation</p>
+    </div>
+
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border-left:5px solid var(--gold); transition:0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+      <h3 style="color:var(--gold); margin-bottom:10px;">📖 Quran Reading with Tajweed</h3>
+      <p>Learn proper pronunciation and rules of Tajweed</p>
+    </div>
+
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border-left:5px solid var(--gold); transition:0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+      <h3 style="color:var(--gold); margin-bottom:10px;">🧠 Memorize Quran Online</h3>
+      <p>Complete Hifz program with revision plan</p>
+    </div>
+
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border-left:5px solid var(--gold); transition:0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+      <h3 style="color:var(--gold); margin-bottom:10px;">📚 Learn Tafsir Online</h3>
+      <p>Understand meaning and explanation of Quran</p>
+    </div>
+
+    <div style="background: var(--light-blue); padding
+
+
+<!-- 2. WHO WE ARE -->
+<section class="container" style="text-align:center;">
+  <h2>Who We Are</h2>
+  <h3 style="color:var(--gold);">Your Trusted Online Quran Academy</h3>
+  <p>Serving students worldwide with certified Quranic scholars</p>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:25px; margin-top:30px;">
+    <div style="background: var(--light-blue); padding:30px; border-radius:15px; border:2px solid var(--gold);">
+      <h3 style="color:var(--gold); font-size:3em;">1000+</h3><p>Students</p>
+    </div>
+    <div style="background: var(--light-blue); padding:30px; border-radius:15px; border:2px solid var(--gold);">
+      <h3 style="color:var(--gold); font-size:3em;">30+</h3><p>Courses</p>
+    </div>
+    <div style="background: var(--light-blue); padding:30px; border-radius:15px; border:2px solid var(--gold);">
+      <h3 style="color:var(--gold); font-size:3em;">100+</h3><p>Teachers</p>
+    </div>
+    <div style="background: var(--light-blue); padding:30px; border-radius:15px; border:2px solid var(--gold);">
+      <h3 style="color:var(--gold); font-size:3em;">50+</h3><p>Countries</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHY TRUST US -->
+<section class="container">
+  <h2>Why Students Trust Us</h2>
+  <div style="max-width:800px; margin:auto;">
+    <div style="background: var(--light-blue); border:2px solid #25D366; border-radius:15px; padding:25px; margin-bottom:20px;">
+      <h3 style="color:#25D366;">24/7 Support</h3><p>Teachers available around the clock</p>
+    </div>
+    <div style="background: var(--light-blue); border:2px solid var(--gold); border-radius:15px; padding:25px; margin-bottom:20px;">
+      <h3 style="color:var(--gold);">Safe Service</h3><p>Privacy and Confidentiality Guarantee</p>
+    </div>
+    <div style="background: var(--light-blue); border:2px solid #3b82f6; border-radius:15px; padding:25px;">
+      <h3 style="color:#3b82f6;">Quality Score</h3><p>4.72 Average Quality Score</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. 3 STEPS -->
+<section class="container" style="text-align:center;">
+  <h2>Start Learning in 3 Steps</h2>
+  <h3 style="color:var(--gold);">1. Book your free trial</h3><p>Tell us age, level and class time.</p>
+  <h3 style="color:var(--gold);">2. Meet your teacher</h3><p>Three free 30-minute classes.</p>
+  <h3 style="color:var(--gold);">3. Enrol and start</h3><p>Choose your plan and schedule.</p>
+  <a href="https://wa.me/923130934215" target="_blank" style="display:inline-block; margin-top:20px; padding:18px 40px; background:var(--gold); color:var(--blue); font-weight:bold; text-decoration:none; border-radius:12px;">BOOK MY FREE TRIAL!</a>
+</section>
+      
+<!-- 7. STUDENT FORM WITH COUNTRY -->
+<section class="container" id="student-form">
+  <h2>Student Admission Form</h2>
+  <form id="studentForm" style="background: var(--light-blue); padding:40px; border-radius:15px; max-width:700px; margin:auto; border:2px solid var(--gold);">
+    <h3 style="color:var(--gold);">Student Information</h3>
+    <input type="text" name="StudentName" placeholder="Student Full Name" required>
+    <input type="number" name="Age" placeholder="Age" required>
+    <select name="Gender" required><option value="">Select Gender</option><option>Male</option><option>Female</option></select>
+    <select name="Country" required>
+  <option value="">Select Country</option>
+  <option>United States</option>
+  <option>United Kingdom</option>
+  <option>Canada</option>
+  <option>Australia</option>
+  <option>UAE</option>
+  <option>Saudi Arabia</option>
+  <option>others</option>
+    
+    <h3 style="color:var(--gold);">Parents and guardians Information</h3>
+    <input type="text" name="ParentName" placeholder="Parent or guardian Name" required>
+    <input type="tel" name="ParentPhone" placeholder="Parent or guardian WhatsApp" required>
+    <input type="email" name="ParentEmail" placeholder="Parent or guardian Email" required>
+
+    <h3 style="color:var(--gold);">Course Details</h3>
+    <select name="Course" required>
+  <option value="">Select Course</option>
+  <option>Learn Noorani Qaida Online</option>
+  <option>Quran Reading with Tajweed</option>
+  <option>Memorize Quran Online - Hifz</option>
+  <option>Learn Tafsir Online</option>
+  <option>Learn Arabic Online</option>
+  <option>Learn Islamic Studies Online</option>
+  <option>Taleem ul Islam</option>
+  <option>Quran Translation Course</option>
+  <option>Quranic Arabic Course</option>
+    </select>
+    <textarea name="Message" placeholder="Message" rows="3"></textarea>
+    <button type="button" onclick="sendStudentForm()">Submit Admission</button>
+  </form>
+</section>
+  <!-- SOCIAL MEDIA - WITH VISIBLE LINKS -->
+<section style="text-align:center; padding:50px 20px; background: var(--blue); border-top:3px solid var(--gold);">
+  
+  <h2 style="color:var(--gold); font-size:2.5em; margin-bottom:15px;">Connect With Us</h2>
+  <p style="color:#fff; margin-bottom:35px; font-size:1.1em;">Follow FATIMA ISLAMIC ACADEMY</p>
+
+  <div style="display:flex; gap:25px; justify-content:center; flex-wrap:wrap; align-items:stretch; max-width:1000px; margin:auto;">
+
+    <!-- FACEBOOK CARD -->
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border:2px solid #1877F2; flex:1; min-width:280px;">
+      <svg width="40" height="40" fill="#1877F2" viewBox="0 0 24 24" style="margin-bottom:10px;">
+        <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.8C17.56 20.87 21 16.84 21 12Z"/>
+      </svg>
+      <h3 style="color:#1877F2; margin:10px 0;">Facebook</h3>
+      <a href="https://www.facebook.com/share/19KuiZFbmc/" target="_blank" style="color:#fff; word-break:break-all; font-size:0.9em;">
+        facebook.com/share/19KuiZFbmc/
+      </a>
+      <br><br>
+      <a href="https://www.facebook.com/share/19KuiZFbmc/" target="_blank"
+         style="display:inline-block; background:#1877F2; color:#fff; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">
+        Visit Page
+      </a>
+    </div>
+
+    <!-- INSTAGRAM CARD -->
+    <div style="background: var(--light-blue); padding:25px; border-radius:15px; border:2px solid #dd2a7b; flex:1; min-width:280px;">
+      <svg width="40" height="40" fill="#dd2a7b" viewBox="0 0 24 24" style="margin-bottom:10px;">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      <h3 style="color:#dd2a7b; margin:10px 0;">Instagram</h3>
+      <a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank" style="color:#fff; word-break:break-all; font-size:0.9em;">
+        @fatima.islamic.academy
+      </a>
+      <br><br>
+      <a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank"
+         style="display:inline-block; background:linear-gradient(45deg,#f58529,#dd2a7b,#8134AF); color:#fff; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">
+        Visit Profile
+      </a>
+    </div>
+
+<!-- 8. FOOTER -->
+<footer>
+  <img src="logo.png" style="width:130px;">
+  <p>📧 www.fatima.islamic.academy@gmail.com</p>
+  <p>📞 +92 313 0934215</p>
+  <p>© 2026 Fatima Islamic Academy</p>
+</footer>
+
+<!-- 9. WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/923130934215" class="whatsapp-float" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" style="width:35px; height:35px;">
+</a>
+
+<script>
+function sendStudentForm() {
+  const f = document.getElementById('studentForm');
+  const msg = `*New Student Admission*%0A*Student:* ${f.StudentName.value}%0A*Country:* ${f.Country.value}%0A*Parent:* ${f.ParentName.value}`;
+  window.open(`https://wa.me/923130934215?text=${msg}`, '_blank');
+}
+</script>
+
+</body>
+  </html>
