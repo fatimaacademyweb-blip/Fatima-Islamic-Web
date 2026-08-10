@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <header class="topbar">
-  <div class="container">
-    <div class="contact">📞 +923130934215</div>
-    <div class="brand">FATIMA ISLAMIC ACADEMY</div>
-  </div>
-  </header>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -520,6 +514,82 @@
       </div>
     
 </section>
+      <!-- FREE TRIAL BOOK BOX -->
+<section class="free-trial-box">
+  <div class="container">
+    <div class="trial-icon">📖</div>
+    <div class="trial-text">
+      <h3>Get Your FREE Trial Book!</h3>
+      <p>Experience 1 full lesson + Book absolutely FREE. No credit card needed.</p>
+    </div>
+    <a href="https://wa.me/447xxxxxxxxx?text=I%20want%20Free%20Trial%20Book" class="trial-btn" target="_blank">
+      Claim Now
+    </a>
+  </div>
+</section>
+
+<style>
+.free-trial-box{
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  border: 3px solid #1E3A8A;
+  border-radius: 20px;
+  padding: 25px 30px;
+  margin: 40px 20px;
+  box-shadow: 0 8px 20px rgba(30,58,138,0.2);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse{
+  0%, 100%{transform: scale(1);}
+  50%{transform: scale(1.02);}
+}
+.free-trial-box .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.trial-icon{
+  font-size: 60px;
+}
+.trial-text h3{
+  color: #1E3A8A;
+  font-size: 1.8em;
+  margin: 0;
+  font-weight: 900;
+}
+.trial-text p{
+  color: #1E3A8A;
+  font-size: 1.1em;
+  margin: 5px 0 0 0;
+  font-weight: 600;
+}
+.trial-btn{
+  background: #1E3A8A;
+  color: #FFD700;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+.trial-btn:hover{
+  background: #FFD700;
+  color: #1E3A8A;
+  transform: translateY(-3px);
+}
+
+/* Mobile */
+@media (max-width:768px){
+  .free-trial-box .container{justify-content: center; text-align: center;}
+  .trial-text h3{font-size: 1.4em;}
+}
+</style>
 
 <style>
 .steps{padding:80px 20px; background:#1E3A8A; text-align:center;}
