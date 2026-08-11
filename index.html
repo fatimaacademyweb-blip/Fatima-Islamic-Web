@@ -87,7 +87,6 @@
       justify-content: center;
       z-index: 1000;
     }
-    
     .welcome-btn{
   background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
   color: #1E3A8A;
@@ -103,71 +102,56 @@
   display: inline-block;
   margin-top: 10px;
 }
- <style>
+
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+</style>
+
 </head>
 <body>
+<!-- LOGO CENTER + BARA -->
+<div class="logo-area" style="display:flex; flex-direction:column; align-items:center; gap:15px; margin-bottom:15px;">
+  <img src="logo.jpg" alt="Fatima Islamic Academy Logo" style="width:120px; height:120px; border-radius:50%; border:3px solid #FFD700; object-fit:cover;">
+  
+  <!-- NAAM -->
+  <div class="logo-text">
+    <h1 style="color:#FFD700; font-size:2em; margin:0; font-weight:800; letter-spacing:2px; text-shadow:0 0 8px rgba(255,215,0,0.5);">FATIMA</h1>
+    <p style="color:#FFD700; font-size:1em; margin:0; font-weight:600;">ISLAMIC ACADEMY</p>
+  </div>
+</div>    
+<!-- Welcome Button -->
+<a href="https://wa.me/923130934215?text=Assalamualikum.%20I%20want%20to%20join" class="welcome-btn" target="_blank" style="margin-bottom: 25px; display: inline-block;">Welcome</a>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fatima Islamic Academy - Online Quran Classes</title>
-<style>
-  *{margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, sans-serif;}
-body{background:#1E3A8A; color:#fff; font-family:'Poppins', sans-serif;}
-  <header>
-  <div class="container" style="text-align:center; padding:30px 20px;">
-    
-    <!-- LOGO CENTER + BARA -->
-    <div class="logo-area" style="display:flex; flex-direction:column; align-items:center; gap:15px; margin-bottom:15px;">
-      <img src="logo.jpg" alt="Fatima Islamic Academy Logo" style="width:120px; height:120px; border-radius:50%; border:3px solid #FFD700; object-fit:cover;">
-      
-      <!-- NAAM -->
-      <div class="logo-text">
-        <h1 style="color:#FFD700; font-size:2em; margin:0; font-weight:800; letter-spacing:2px; text-shadow:0 0 8px rgba(255,215,0,0.5);">FATIMA</h1>
-        <p style="color:#FFD700; font-size:1em; margin:0; font-weight:600;">ISLAMIC ACADEMY</p>
-    </div>
-<!-- WHATSAPP NUMBER -->
-<div style="text-align:center; padding:15px 0;">
-  <a href="https://wa.me/923130934215" target="_blank" style="display:inline-block; background:#FFD700; color:#1E1E1E; padding:10px 20px; border-radius:8px; font-weight:bold; text-decoration:none;">
-    +92 313 0934215
-  </a>
-</div>
-</header>
-  <div class="hero" style="background: #0F6B4E; padding: 40px 20px; text-align: center;">
-    <!-- Phone Number -->
-    <p style="color: #FFD700; font-size: 1.2em; font-weight: bold; margin-bottom: 15px;">+92 313 0934215</p>
-    
-    <!-- Welcome Button -->
-    <a href="https://wa.me/923130934215?text=Assalamualikum.%20I%20want%20to%20join" class="welcome-btn" target="_blank" style="margin-bottom: 25px; display: inline-block;">Welcome</a>
-    
-    <!-- Main Heading (Gold, Big & Top) -->
-    <h1 style="color: #FFD700; font-size: 2.2em; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">Online Quran Academy for Kids & Adults</h1>
-    
-    <!-- Description Text (White & Bold) -->
-    <p style="font-weight: bold; color: #ffffff; font-size: 1em; line-height: 1.5;">One-to-one live Quran classes in Tajweed, Noorani Qaida, Hifz, Tafseer and Islamic Studies with certified male and female teachers. Serving families across the USA, UK, Canada, UAE, and worldwide students with flexible schedules for every time zone that suits you</p>
-</div>
+<!-- Main Heading (Gold, Big & Top) -->
+<h1 style="color: #FFD700; font-size: 2.2em; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">Online Quran Academy for Kids & Adults</h1>
+
+<!-- Description Text (White & Bold) -->
+<p style="font-weight: bold; color: #ffffff; font-size: 1em; line-height: 1.5;">One-to-one live Quran classes in Tajweed, Noorani Qaida, Hifz, Tafseer and Islamic Studies with certified male and female teachers. Serving families across the USA, UK, Canada, UAE, and worldwide students with flexible schedules for every time zone that suits you.</p>
+
+
   
   
-<p>One-to-one live Quran classes in...
-  .programs{padding:40px 20px;}
-  .programs h3{text-align:center; color:#FFD700; font-size:1.6em; margin-bottom:30px;}
-  .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;}
-  
-  .card{background:#0F6B4E; border-radius:12px; padding:15px; text-align:center; border:1px solid #FFD700;}
-  .card img{width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:12px;}
-  .card h4{color:#FFD700; font-size:1.1em; margin-bottom:8px;}
-  .card p{font-size:0.85em; margin-bottom:15px; min-height:40px;}
-  .btns{display:flex; gap:10px; justify-content:center;}
-  .btn-details{background:transparent; border:1px solid #fff; color:#fff; padding:8px 18px; border-radius:6px; cursor:pointer;}
-  .btn-register{background:#FFD700; color:#0F6B4E; border:none; padding:8px 18px; border-radius:6px; font-weight:bold; cursor:pointer;}
-  .welcome-top {
+```css
+.programs{padding:40px 20px;}
+.programs h3{text-align:center; color:#FFD700; font-size:1.6em; margin-bottom:30px;}
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;}
+
+.card{background:#0F6B4E; border-radius:12px; padding:15px; text-align:center; border:1px solid #FFD700;}
+.card img{width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:12px;}
+.card h4{color:#FFD700; font-size:1.1em; margin-bottom:8px;}
+.card p{font-size:0.85em; margin-bottom:15px; min-height:40px;}
+.btns{display:flex; gap:10px; justify-content:center;}
+.btn-details{background:transparent; border:1px solid #fff; color:#fff; padding:8px 18px; border-radius:6px; cursor:pointer;}
+.btn-register{background:#FFD700; color:#0F6B4E; border:none; padding:8px 18px; border-radius:6px; font-weight:bold; cursor:pointer;}
+.welcome-top {
   font-size: 18px;
   color: #FFC107;
   font-weight: 700;
   text-align: center;
   margin-bottom: 10px;
 }
+```
+
   .welcome-top {
   font-size: 16px !important;
   color: #FFC107 !important;
