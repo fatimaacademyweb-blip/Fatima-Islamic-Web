@@ -109,133 +109,658 @@
 
 </head>
 <body>
-<!-- LOGO CENTER + BARA -->
-<div class="logo-area" style="display:flex; flex-direction:column; align-items:center; gap:15px; margin-bottom:15px;">
-  <img src="logo.jpg" alt="Fatima Islamic Academy Logo" style="width:120px; height:120px; border-radius:50%; border:3px solid #FFD700; object-fit:cover;">
-  
-  <!-- NAAM -->
-  <div class="logo-text">
-    <h1 style="color:#FFD700; font-size:2em; margin:0; font-weight:800; letter-spacing:2px; text-shadow:0 0 8px rgba(255,215,0,0.5);">FATIMA</h1>
-    <p style="color:#FFD700; font-size:1em; margin:0; font-weight:600;">ISLAMIC ACADEMY</p>
+<!-- =========================
+     FATIMA ISLAMIC ACADEMY
+     HEADER / HERO
+========================= -->
+
+<div class="hero">
+
+  <!-- LOGO CENTER -->
+  <div class="logo-area">
+
+    <img
+      src="logo.jpg"
+      alt="Fatima Islamic Academy Logo"
+      class="main-logo"
+    >
+
+    <!-- ACADEMY NAME -->
+    <div class="logo-text">
+      <h1>FATIMA</h1>
+      <p>ISLAMIC ACADEMY</p>
+    </div>
+
   </div>
-</div>    
-<!-- Welcome Button -->
-<a href="https://wa.me/923130934215?text=Assalamualikum.%20I%20want%20to%20join" class="welcome-btn" target="_blank" style="margin-bottom: 25px; display: inline-block;">Welcome</a>
-
-<!-- Main Heading (Gold, Big & Top) -->
-<h1 style="color: #FFD700; font-size: 2.2em; font-weight: bold; margin-bottom: 20px; line-height: 1.2;">Online Quran Academy for Kids & Adults</h1>
-
-<!-- Description Text (White & Bold) -->
-<p style="font-weight: bold; color: #ffffff; font-size: 1em; line-height: 1.5;">One-to-one live Quran classes in Tajweed, Noorani Qaida, Hifz, Tafseer and Islamic Studies with certified male and female teachers. Serving families across the USA, UK, Canada, UAE, and worldwide students with flexible schedules for every time zone that suits you.</p>
 
 
-  
-  
-```css
-.programs{padding:40px 20px;}
-.programs h3{text-align:center; color:#FFD700; font-size:1.6em; margin-bottom:30px;}
-.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;}
+  <!-- MAIN HEADING -->
+  <div class="main-heading">
+    Online Quran Academy for Kids &amp; Adults
+  </div>
 
-.card{background:#0F6B4E; border-radius:12px; padding:15px; text-align:center; border:1px solid #FFD700;}
-.card img{width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:12px;}
-.card h4{color:#FFD700; font-size:1.1em; margin-bottom:8px;}
-.card p{font-size:0.85em; margin-bottom:15px; min-height:40px;}
-.btns{display:flex; gap:10px; justify-content:center;}
-.btn-details{background:transparent; border:1px solid #fff; color:#fff; padding:8px 18px; border-radius:6px; cursor:pointer;}
-.btn-register{background:#FFD700; color:#0F6B4E; border:none; padding:8px 18px; border-radius:6px; font-weight:bold; cursor:pointer;}
-.welcome-top {
-  font-size: 18px;
-  color: #FFC107;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 10px;
-}
-```
 
-  .welcome-top {
-  font-size: 16px !important;
-  color: #FFC107 !important;
-  font-weight: 600 !important;
-  text-align: center !important;
-  margin-bottom: 8px !important; /* thora gap */
-  margin-top: -10px !important; /* uper kheenchne ke liye */
-}
+  <!-- DESCRIPTION -->
+  <p class="hero-description">
+    One-to-one live Quran classes in Tajweed, Noorani Qaida, Hifz,
+    Tafseer and Islamic Studies with certified male and female teachers.
+    Serving families across the USA, UK, Canada, UAE, and worldwide
+    students with flexible schedules for every time zone that suits you.
+  </p>
 
-.main-heading {
-  font-size: 34px !important;
-  font-weight: 900 !important;
-  color: #FFC107 !important;
-  text-align: center !important;
-  line-height: 1.3 !important;
-  margin-bottom: 20px !important;
-}
+</div>
 
-.main-heading {
-  font-size: 36px !important;
-  font-weight: 900;
-  color: #FFC107;
-  text-align: center;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
 
-@media (max-width: 768px) {
+<!-- =========================
+     PROGRAMS
+========================= -->
+
+<section class="programs">
+
+  <h3>Our Quran Programs</h3>
+
+  <div class="grid">
+
+    <!-- Your existing course cards go here -->
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CSS
+========================= -->
+
+<style>
+
+  /* =========================
+     GLOBAL
+  ========================= */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #061a35 !important;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .hero {
+    width: 100%;
+    background: linear-gradient(
+      135deg,
+      #0B5E3D 0%,
+      #07502f 50%,
+      #014421 100%
+    );
+
+    padding: 45px 20px 50px;
+
+    border-radius: 0 0 30px 30px;
+
+    text-align: center;
+
+    box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.30);
+  }
+
+
+  /* =========================
+     LOGO
+  ========================= */
+
+  .logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .main-logo {
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+
+    border: 4px solid #FFD700;
+
+    object-fit: cover;
+
+    display: block;
+
+    box-shadow:
+      0 0 0 5px rgba(255, 215, 0, 0.10),
+      0 8px 25px rgba(0, 0, 0, 0.35);
+  }
+
+
+  /* =========================
+     FATIMA NAME
+  ========================= */
+
+  .logo-text {
+    text-align: center;
+  }
+
+
+  .logo-text h1 {
+    color: #FFD700;
+
+    font-size: 2.1em;
+
+    margin: 0;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    line-height: 1.1;
+
+    text-shadow:
+      0 0 8px rgba(255, 215, 0, 0.45);
+  }
+
+
+  .logo-text p {
+    color: #FFD700;
+
+    font-size: 1em;
+
+    margin: 5px 0 0;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+  }
+
+
+  /* =========================
+     MAIN HEADING
+     GREEN BACKGROUND
+  ========================= */
+
   .main-heading {
-    font-size: 28px !important;
+    display: block;
+
+    max-width: 950px;
+
+    margin: 20px auto 25px;
+
+    padding: 18px 20px;
+
+    background: #08783F;
+
+    color: #ffffff;
+
+    font-size: 36px;
+
+    font-weight: 900;
+
+    text-align: center;
+
+    line-height: 1.25;
+
+    border-radius: 10px;
+
+    border: 1px solid rgba(255, 215, 0, 0.45);
+
+    box-shadow:
+      0 5px 18px rgba(0, 0, 0, 0.25);
   }
+
+
+  /* =========================
+     DESCRIPTION
+  ========================= */
+
+  .hero-description {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.7;
+
+    text-align: center;
   }
-  footer{background:#0F6B4E; text-align:center; padding:20px; font-size:0.8em; border-top:1px solid #FFD700; margin-top:40px;}
-/* Free Trial Box gap fix */
-div[style*="background:#FFC107"] {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-    }
-  .welcome-btn{
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-  color: #1E3A8A;
-  padding: 12px 28px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 1em;
-  border: 2px solid #FFD700;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-  display: inline-block;
-  margin-top: 10px;
-}
-.welcome-btn:hover{
-  background: #1E3A8A;
-  color: #FFD700;
-  border: 2px solid #FFD700;
-  transform: translateY(-2px);
-}
-   /* Hero section ka background green */
-  /* Cards aur Trust items wapis blue */
+
+
+  /* =========================
+     PROGRAMS
+  ========================= */
+
+  .programs {
+    padding: 50px 20px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+  }
+
+
+  .programs h3 {
+    text-align: center;
+
+    color: #FFD700;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    margin: 0 0 35px;
+
+    line-height: 1.2;
+  }
+
+
+  /* =========================
+     GRID
+  ========================= */
+
+  .grid {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 30px 20px;
+  }
+
+
+  /* =========================
+     COURSE CARD
+  ========================= */
+
+  .card,
   .course-box {
-  background: rgba(30, 58, 138, 0.3);
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  text-align: center;
-  transition: all 0.3s ease;
-}
-.course-box:hover {
-  transform: translateY(-8px);
-  border-color: #FFD700;
-}
-.card, .trust-item {
-  background: rgba(30, 58, 138, 0.25);
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  border-radius: 12px;
-}
-  
-.hero {
-  background: linear-gradient(135deg, #0B5E3D 0%, #014421 100%);
-  padding: 60px 20px;
-  border-radius: 0 0 30px 30px;
+
+    background:
+      linear-gradient(
+        145deg,
+        #0b2d54,
+        #071f3d
+      ) !important;
+
+    border-radius: 14px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 215, 0, 0.30);
+
+    box-shadow:
+      0 7px 20px rgba(0, 0, 0, 0.30);
+
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
   }
+
+
+  .card:hover,
+  .course-box:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #FFD700;
+
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.40);
+  }
+
+
+  /* =========================
+     CARD IMAGE
+  ========================= */
+
+  .card img,
+  .course-box img {
+
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 9px;
+
+    margin-bottom: 15px;
+  }
+
+
+  /* =========================
+     CARD TITLE
+  ========================= */
+
+  .card h4,
+  .course-box h4 {
+
+    color: #FFD700;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    margin: 10px 0;
+  }
+
+
+  .card p,
+  .course-box p {
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+  }
+
+
+  /* =========================
+     BUTTON AREA
+  ========================= */
+
+  .btns {
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+  }
+
+
+  /* DETAILS BUTTON */
+
+  .btn-details {
+
+    background: #315fa5;
+
+    border: none;
+
+    color: #ffffff;
+
+    padding: 11px 35px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+  }
+
+
+  .btn-details:hover {
+
+    background: #3f73c0;
+
+    transform: translateY(-2px);
+  }
+
+
+  /* REGISTER BUTTON */
+
+  .btn-register {
+
+    background: #FFD700;
+
+    color: #08203d;
+
+    border: none;
+
+    padding: 11px 25px;
+
+    border-radius: 7px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+  }
+
+
+  .btn-register:hover {
+
+    background: #ffffff;
+
+    color: #08203d;
+
+    transform: translateY(-2px);
+  }
+
+
+  /* =========================
+     TRUST ITEMS
+  ========================= */
+
+  .trust-item {
+
+    background: rgba(30, 58, 138, 0.25) !important;
+
+    border: 1px solid rgba(255, 215, 0, 0.30);
+
+    border-radius: 12px;
+  }
+
+
+  /* =========================
+     FOOTER
+  ========================= */
+
+  footer {
+
+    background:
+      linear-gradient(
+        135deg,
+        #071f3d,
+        #061a35
+      ) !important;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    font-size: 0.9em;
+
+    border-top: 1px solid #FFD700;
+
+    margin-top: 40px;
+  }
+
+
+  /* ==================================================
+     REMOVE OLD WELCOME ELEMENTS
+     Agar HTML mein purana Welcome reh gaya ho
+  ================================================== */
+
+  .welcome-btn,
+  .welcome-top {
+
+    display: none !important;
+  }
+
+
+  /* ==================================================
+     AGAR PURANA LOWER FATIMA LOGO/BRANDING
+     kisi container mein hai to is class ko us
+     container par lagayen:
+     
+     class="old-branding"
+  ================================================== */
+
+  .old-branding {
+
+    display: none !important;
+  }
+
+
+  /* =========================
+     MOBILE
+  ========================= */
+
+  @media (max-width: 768px) {
+
+    .hero {
+
+      padding: 30px 15px 35px;
+
+      border-radius: 0 0 22px 22px;
+    }
+
+
+    .main-logo {
+
+      width: 120px;
+
+      height: 120px;
+    }
+
+
+    .logo-text h1 {
+
+      font-size: 1.8em;
+    }
+
+
+    .logo-text p {
+
+      font-size: 0.9em;
+    }
+
+
+    .main-heading {
+
+      font-size: 27px !important;
+
+      padding: 15px 12px;
+
+      margin-top: 18px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .hero-description {
+
+      font-size: 15px;
+
+      line-height: 1.6;
+    }
+
+
+    .programs {
+
+      padding: 35px 15px;
+    }
+
+
+    .programs h3 {
+
+      font-size: 25px;
+
+      margin-bottom: 25px;
+    }
+
+
+    .grid {
+
+      grid-template-columns: 1fr;
+
+      gap: 22px;
+    }
+
+
+    .card img,
+    .course-box img {
+
+      height: auto;
+
+      min-height: 180px;
+
+      max-height: 240px;
+    }
+
+
+    .btn-details,
+    .btn-register {
+
+      padding: 10px 25px;
+    }
+  }
+
+
+  /* =========================
+     SMALL PHONES
+  ========================= */
+
+  @media (max-width: 400px) {
+
+    .main-heading {
+
+      font-size: 23px !important;
+    }
+
+
+    .hero-description {
+
+      font-size: 14px;
+    }
+
+
+    .logo-text h1 {
+
+      font-size: 1.6em;
+    }
+
+
+    .programs h3 {
+
+      font-size: 22px;
+    }
+  }
+
 </style>
-</head>
   <div style="display:flex; align-items:center; justify-content:flex-start; gap:12px; margin-bottom:12px;">
     <img src="logo.jpg.jpg" alt="Logo" style="width:50px; height:50px; border-radius:50%; border:2px solid #FFD700;">
     <div>
