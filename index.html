@@ -103,98 +103,675 @@
   margin-top: 10px;
 }
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-</head>
-<body>
-<!-- =========================
-     FATIMA ISLAMIC ACADEMY
-     HEADER / HERO
-========================= -->
+<head>
 
-<div class="hero">
+    <meta charset="UTF-8">
 
-  <!-- LOGO CENTER -->
-  <div class="logo-area">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <img
-      src="logo.jpg.jpg"
-      alt="Fatima Islamic Academy Logo"
-      class="main-logo"
+    <title>Fatima Islamic Academy</title>
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
     >
 
-    <!-- ACADEMY NAME -->
-    <div class="logo-text">
-      <h1>FATIMA</h1>
-      <p>ISLAMIC ACADEMY</p>
-  </div>
 
-    
-</div>
-  <!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/923130934215" class="whatsapp-btn" target="_blank">
-    <span>☘</span> WhatsApp Us
-</a>
-  <!-- MAIN HEADING -->
-  <div class="main-heading">
-    Online Quran Academy for Kids &amp; Adults
-  </div>
+    <style>
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
 
-  <!-- DESCRIPTION -->
-  <h1 class="hero-description">
-    One-to-one live Quran classes in Tajweed, Noorani Qaida, Hifz,
-    Tafseer and Islamic Studies with certified male and female teachers.
-    Serving families across the USA, UK, Canada, UAE, and worldwide
-    students with flexible schedules for every time zone that suits you.
-  </h1>
+        /* ==================================================
+           BODY
+        ================================================== */
 
-</div>
+        body {
 
+            font-family: 'Poppins', sans-serif;
 
-  /* =========================
-     PROGRAMS
-  ========================= */
+            background: #061d43;
 
-  .programs {
-    padding: 50px 20px;
+            color: #ffffff;
 
-    max-width: 1200px;
+            min-height: 100vh;
 
-    margin: 0 auto;
-  }
+        }
 
 
-  .programs h3 {
-    text-align: center;
+        /* ==================================================
+           MAIN HERO
+        ================================================== */
 
-    color: #FFD700;
+        .hero {
 
-    font-size: 30px;
+            width: 100%;
 
-    font-weight: 900;
+            max-width: 1200px;
 
-    margin: 0 0 35px;
+            margin: 0 auto;
 
-    line-height: 1.2;
-  }
+            padding: 35px 20px 60px;
+
+            text-align: center;
+
+        }
 
 
-  /* =========================
-     GRID
-  ========================= */
+        /* ==================================================
+           LOGO AREA
+        ================================================== */
 
-  .grid {
-    display: grid;
+        .logo-area {
 
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+            display: flex;
 
-    gap: 30px 20px;
-  }
+            flex-direction: column;
 
+            align-items: center;
+
+            justify-content: center;
+
+        }
+
+
+        /* ==================================================
+           MAIN LOGO
+        ================================================== */
+
+        .main-logo {
+
+            width: 155px;
+
+            height: 155px;
+
+            object-fit: contain;
+
+            display: block;
+
+            margin: 0 auto 15px;
+
+        }
+
+
+        /* ==================================================
+           FATIMA TEXT
+        ================================================== */
+
+        .logo-text h1 {
+
+            margin: 0;
+
+            color: #b8860b;
+
+            font-size: 60px;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* ==================================================
+           ISLAMIC ACADEMY TEXT
+        ================================================== */
+
+        .logo-text p {
+
+            margin: 10px 0 0;
+
+            color: #ffffff;
+
+            font-size: 24px;
+
+            font-weight: 700;
+
+            line-height: 1.2;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        /* ==================================================
+           PROFESSIONAL WHATSAPP BUTTON
+        ================================================== */
+
+        .whatsapp-btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 11px;
+
+            margin-top: 25px;
+
+            margin-bottom: 15px;
+
+            padding: 13px 30px;
+
+            background: linear-gradient(
+                135deg,
+                #25D366,
+                #128C7E
+            );
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 17px;
+
+            font-weight: 700;
+
+            line-height: 1;
+
+            letter-spacing: 0.3px;
+
+            border-radius: 50px;
+
+            border: 2px solid rgba(255,255,255,0.25);
+
+            box-shadow:
+                0 6px 18px rgba(0,0,0,0.30),
+                inset 0 1px 0 rgba(255,255,255,0.20);
+
+            transition: all 0.3s ease;
+
+        }
+
+
+        .whatsapp-btn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(0,0,0,0.40),
+                0 0 15px rgba(37,211,102,0.35);
+
+        }
+
+
+        .whatsapp-btn span {
+
+            font-size: 22px;
+
+            font-weight: 900;
+
+            line-height: 1;
+
+        }
+
+
+        /* ==================================================
+           WELCOME TEXT
+        ================================================== */
+
+        .welcome-text {
+
+            margin: 0 0 25px;
+
+            color: #ffffff;
+
+            font-size: 20px;
+
+            font-weight: 700;
+
+            line-height: 1.4;
+
+            letter-spacing: 1px;
+
+            text-transform: capitalize;
+
+        }
+
+
+        /* ==================================================
+           FATIMA IN WELCOME TEXT
+        ================================================== */
+
+        .welcome-text span {
+
+            color: #b8860b;
+
+            font-weight: 900;
+
+        }
+
+
+        /* ==================================================
+           GREEN CONTENT BOX
+           
+           Heading + Description dono isi green
+           background ke andar hain.
+        ================================================== */
+
+        .content-green {
+
+            width: 100%;
+
+            background: #087a43;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            border: 1px solid rgba(255,255,255,0.15);
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+
+        }
+
+
+        /* ==================================================
+           MAIN HEADING
+        ================================================== */
+
+        .main-heading {
+
+            width: 100%;
+
+            padding: 18px 15px 12px;
+
+            color: #ffffff;
+
+            font-size: 36px;
+
+            font-weight: 900;
+
+            line-height: 1.3;
+
+            text-align: center;
+
+        }
+
+
+        /* ==================================================
+           DESCRIPTION
+        ================================================== */
+
+        .hero-description {
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+
+            padding: 0 25px 23px;
+
+            color: #ffffff;
+
+            font-size: 16px;
+
+            font-weight: 800;
+
+            line-height: 1.8;
+
+            letter-spacing: 0.2px;
+
+            text-align: center;
+
+        }
+
+
+        /* ==================================================
+           TABLET
+        ================================================== */
+
+        @media (max-width: 768px) {
+
+
+            .hero {
+
+                padding: 25px 15px 45px;
+
+            }
+
+
+            /* LOGO */
+
+            .main-logo {
+
+                width: 120px;
+
+                height: 120px;
+
+                margin-bottom: 12px;
+
+            }
+
+
+            /* FATIMA */
+
+            .logo-text h1 {
+
+                font-size: 44px;
+
+                letter-spacing: 2px;
+
+            }
+
+
+            /* ISLAMIC ACADEMY */
+
+            .logo-text p {
+
+                font-size: 17px;
+
+                letter-spacing: 2px;
+
+            }
+
+
+            /* WHATSAPP */
+
+            .whatsapp-btn {
+
+                font-size: 17px;
+
+                padding: 12px 24px;
+
+                margin-top: 20px;
+
+                margin-bottom: 13px;
+
+            }
+
+
+            /* WELCOME */
+
+            .welcome-text {
+
+                font-size: 17px;
+
+                letter-spacing: 0.5px;
+
+                margin-bottom: 20px;
+
+            }
+
+
+            /* HEADING */
+
+            .main-heading {
+
+                font-size: 26px;
+
+                padding: 15px 12px 10px;
+
+            }
+
+
+            /* DESCRIPTION */
+
+            .hero-description {
+
+                font-size: 14px;
+
+                font-weight: 800;
+
+                line-height: 1.7;
+
+                padding: 0 15px 20px;
+
+            }
+
+        }
+
+
+        /* ==================================================
+           SMALL MOBILE
+        ================================================== */
+
+        @media (max-width: 430px) {
+
+
+            .hero {
+
+                padding: 20px 12px 40px;
+
+            }
+
+
+            /* LOGO */
+
+            .main-logo {
+
+                width: 105px;
+
+                height: 105px;
+
+            }
+
+
+            /* FATIMA */
+
+            .logo-text h1 {
+
+                font-size: 37px;
+
+                letter-spacing: 1px;
+
+            }
+
+
+            /* ISLAMIC ACADEMY */
+
+            .logo-text p {
+
+                font-size: 14px;
+
+                letter-spacing: 1.5px;
+
+                margin-top: 7px;
+
+            }
+
+
+            /* WHATSAPP */
+
+            .whatsapp-btn {
+
+                font-size: 16px;
+
+                padding: 11px 22px;
+
+                margin-top: 18px;
+
+                margin-bottom: 12px;
+
+            }
+
+
+            .whatsapp-btn span {
+
+                font-size: 22px;
+
+            }
+
+
+            /* WELCOME */
+
+            .welcome-text {
+
+                font-size: 15px;
+
+                letter-spacing: 0.5px;
+
+                margin-bottom: 17px;
+
+            }
+
+
+            /* HEADING */
+
+            .main-heading {
+
+                font-size: 21px;
+
+                padding: 14px 10px 9px;
+
+                border-radius: 8px 8px 0 0;
+
+            }
+
+
+            /* DESCRIPTION */
+
+            .hero-description {
+
+                font-size: 12.5px;
+
+                font-weight: 800;
+
+                line-height: 1.7;
+
+                padding: 0 12px 18px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         FATIMA ISLAMIC ACADEMY
+         HEADER / HERO
+    ================================================== -->
+
+    <div class="hero">
+
+
+        <!-- ==================================================
+             LOGO
+        ================================================== -->
+
+        <div class="logo-area">
+
+            <img
+                src="logo.jpg.jpg"
+                alt="Fatima Islamic Academy Logo"
+                class="main-logo"
+            >
+
+
+            <!-- ACADEMY NAME -->
+
+            <div class="logo-text">
+
+                <h1>
+                    FATIMA
+                </h1>
+
+                <p>
+                    ISLAMIC ACADEMY
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             WHATSAPP BUTTON
+        ================================================== -->
+
+        <a
+            href="https://wa.me/923130934215"
+            class="whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            <span>☏</span>
+
+            WhatsApp Us
+
+        </a>
+
+
+        <!-- ==================================================
+             WELCOME TEXT
+        ================================================== -->
+
+        <div class="welcome-text">
+
+            Welcome to <span>Fatima Academy</span>
+
+        </div>
+
+
+        <!-- ==================================================
+             GREEN CONTENT
+             HEADING + DESCRIPTION
+        ================================================== -->
+
+        <div class="content-green">
+
+
+            <!-- MAIN HEADING -->
+
+            <div class="main-heading">
+
+                Online Quran Academy for Kids &amp; Adults
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+
+            <p class="hero-description">
+
+                One-to-one live Quran classes in Tajweed, Noorani Qaida,
+                Hifz, Tafseer and Islamic Studies with certified male and
+                female teachers. Serving families across the USA, UK,
+                Canada, UAE, and worldwide students with flexible schedules
+                for every time zone that suits you.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
 
   /* =========================
      COURSE CARD
