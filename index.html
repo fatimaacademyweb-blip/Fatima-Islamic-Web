@@ -3270,89 +3270,115 @@ a{
     </form>
 
 </section>
+   <!-- SOCIAL SECTION -->
+<div class="social-wrapper">
+
+<!-- FACEBOOK -->
+<div class="social-card facebook-card">
+    <div class="social-icon">
+        <!-- Official Facebook Logo -->
+        <svg class="fb-icon" viewBox="0 0 24 24" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+        </svg>
+    </div>
+    <h3>Facebook</h3>
+    
+    <a href="https://www.facebook.com/share/19KuiZFbmc/" target="_blank" rel="noopener noreferrer">
+        facebook.com/share/19KuiZFbmc
+    </a>
+
+    <br>
+
+    <a href="https://www.facebook.com/share/19KuiZFbmc/" target="_blank" rel="noopener noreferrer" class="social-button fb-button">
+        Visit Page
+    </a>
+</div>
 
 
-
-<!-- =====================================================
-     SOCIAL MEDIA
-===================================================== -->
-
-<section class="social-section">
-
-
-    <h2>
-        Contact With Us
-    </h2>
-
-
-    <p>
-        Follow FATIMA ISLAMIC ACADEMY
-    </p>
-
-
-    <div class="social-grid">
-
-
-        <!-- FACEBOOK -->
-
-        <div class="social-card facebook-card">
-
-
-            <div class="social-icon">
-                f
-            </div>
-
-
-            <h3>
-                Facebook
-            </h3>
-
-
-            <a
-                href="https://www.facebook.com/share/19KuiZFbmc/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                facebook.com/share/19KuiZFbmc/
-            </a>
-
-
-            <br>
-
-
-            <a
-                href="https://www.facebook.com/share/19KuiZFbmc/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-button facebook-button"
-            >
-                Visit Page
-            </a>
-
-
-        </div>
-       <!-- INSTAGRAM -->
+<!-- INSTAGRAM -->
 <div class="social-card instagram-card">
     <div class="social-icon">
         <!-- Official Instagram Gradient Logo -->
-        <svg class="insta-icon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="insta-icon" viewBox="0 0 24 24" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3a5.75 5.75 0 1 1 0 11.5a5.75 5.75 0 0 1 0-11.5zm0 1.5a4.25 4.25 0 1 0 0 8.5a4.25 4.25 0 0 0 0-8.5zm5.5-2a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5z"/>
         </svg>
     </div>
     <h3>Instagram</h3>
     
-    <style>
-    .instagram-card .social-icon .insta-icon {
-        /* Official App wala gradient */
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-        border-radius: 5px; /* app jesa square */
-        padding: 2px;
-    }
-    .instagram-card .social-icon .insta-icon path {
-        fill: white; /* andar wala icon white */
-    }
-    </style>
+    <a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank" rel="noopener noreferrer">
+        @fatima.islamic.academy
+    </a>
 
+    <br>
+
+    <a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank" rel="noopener noreferrer" class="social-button instagram-button">
+        Visit Profile
+    </a>
+</div>
+
+</div>
+
+
+<style>
+.social-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+.social-card {
+  background: #11264d;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+.social-card h3 { margin: 10px 0; font-size: 18px; }
+.social-card a { color: #ccc; text-decoration: none; font-size: 14px; }
+
+/* Facebook Official */
+.facebook-card { border: 2px solid #1877F2; }
+.facebook-card h3 { color: #1877F2; }
+.fb-icon { fill: #1877F2; }
+.fb-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white !important;
+  background: #1877F2;
+}
+
+/* Instagram Official */
+.instagram-card { border: 2px solid #E1306C; }
+.instagram-card h3 { color: #E1306C; }
+.insta-icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  border-radius: 6px;
+  padding: 3px;
+}
+.insta-icon path { fill: white !important; }
+.instagram-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white !important;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.social-button:hover { opacity: 0.85; }
+   </style>
+
+
+
+
+
+        
+       
     <a
         href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw=="
         target="_blank"
