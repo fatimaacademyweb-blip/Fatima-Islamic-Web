@@ -1,2589 +1,1069 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-Fatima Islamic Academy | Online Quran Classes
-</title>
-
-<meta
-name="description"
-content="Fatima Islamic Academy offers online Quran classes with Tajweed, Noorani Qaida, Hifz, Tafseer, Arabic and Islamic Studies for kids and adults."
->
-
-<link
-rel="preconnect"
-href="https://fonts.googleapis.com"
->
-
-<link
-rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin
->
-
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-rel="stylesheet"
->
-
-
-<style>
-
-/* =====================================================
-   GLOBAL
-===================================================== */
-
-:root{
-
-    --blue:#061d43;
-    --dark-blue:#071f3d;
-    --light-blue:#0b2d54;
-
-    --green:#087a43;
-
-    --gold:#B8860B;
-    --bright-gold:#FFD700;
-
-    --white:#ffffff;
-    --light-text:#E0E7FF;
-
-}
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-
-html{
-    scroll-behavior:smooth;
-}
-
-
-body{
-
-    font-family:"Poppins",Arial,sans-serif;
-
-    background:var(--blue);
-
-    color:#fff;
-
-    overflow-x:hidden;
-
-}
-
-
-img{
-    max-width:100%;
-}
-
-
-a{
-    transition:.3s ease;
-}
-
-
-.container{
-
-    width:100%;
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-    padding:0 20px;
-
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
-
-.hero{
-
-    width:100%;
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-    padding:35px 20px 55px;
-
-    text-align:center;
-
-}
-
-
-/* =====================================================
-   LOGO
-===================================================== */
-
-.logo-area{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    justify-content:center;
-
-}
-
-
-.main-logo{
-
-    width:155px;
-
-    height:155px;
-
-    object-fit:contain;
-
-    display:block;
-
-    margin:0 auto 15px;
-
-}
-
-
-.logo-text h1{
-
-    margin:0;
-
-    color:var(--gold);
-
-    font-size:60px;
-
-    font-weight:900;
-
-    line-height:1;
-
-    letter-spacing:3px;
-
-}
-
-
-.logo-text p{
-
-    margin:10px 0 0;
-
-    color:#fff;
-
-    font-size:24px;
-
-    font-weight:700;
-
-    letter-spacing:3px;
-
-}
-
-
-/* =====================================================
-   WHATSAPP SVG
-===================================================== */
-
-.whatsapp-svg{
-
-    width:24px;
-
-    height:24px;
-
-    display:block;
-
-    fill:currentColor;
-
-}
-
-
-/* =====================================================
-   PROFESSIONAL WHATSAPP BUTTON
-===================================================== */
-
-.whatsapp-btn{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:10px;
-
-    margin:25px 0 18px;
-
-    padding:14px 30px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            #25D366,
-            #128C7E
-        );
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-size:17px;
-
-    font-weight:800;
-
-    border:2px solid rgba(255,255,255,.25);
-
-    border-radius:50px;
-
-    box-shadow:
-
-        0 7px 20px rgba(0,0,0,.30),
-
-        inset 0 1px 0 rgba(255,255,255,.20);
-
-}
-
-
-.whatsapp-btn:hover{
-
-    transform:translateY(-3px);
-
-    box-shadow:
-
-        0 12px 28px rgba(0,0,0,.40),
-
-        0 0 18px rgba(37,211,102,.30);
-
-}
-
-
-/* =====================================================
-   WELCOME
-===================================================== */
-
-.welcome-box{
-
-    margin:12px auto 28px;
-
-    max-width:950px;
-
-    padding:18px 20px 20px;
-
-    text-align:center;
-
-    background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,215,0,.35);
-
-    border-radius:14px;
-
-    box-shadow:0 8px 22px rgba(0,0,0,.18);
-
-}
-
-
-.welcome-small{
-
-    color:var(--bright-gold);
-
-    font-size:13px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
-
-    margin-bottom:7px;
-
-}
-
-
-.welcome-title{
-
-    color:#fff;
-
-    font-size:28px;
-
-    font-weight:900;
-
-    line-height:1.3;
-
-}
-
-
-.welcome-title span{
-
-    color:var(--gold);
-
-    font-weight:900;
-
-}
-
-
-.welcome-line{
-
-    width:75px;
-
-    height:3px;
-
-    background:var(--bright-gold);
-
-    border-radius:20px;
-
-    margin:10px auto;
-
-}
-
-
-.welcome-subtitle{
-
-    margin:0;
-
-    color:var(--light-text);
-
-    font-size:15px;
-
-    font-weight:600;
-
-}
-
-
-/* =====================================================
-   GREEN CONTENT
-===================================================== */
-
-.content-green{
-
-    width:100%;
-
-    background:var(--green);
-
-    border:1px solid rgba(255,255,255,.18);
-
-    border-radius:12px;
-
-    overflow:hidden;
-
-    box-shadow:0 8px 22px rgba(0,0,0,.25);
-
-}
-
-
-.main-heading{
-
-    width:100%;
-
-    padding:20px 18px 12px;
-
-    color:#fff;
-
-    font-size:36px;
-
-    font-weight:900;
-
-    line-height:1.3;
-
-    text-align:center;
-
-}
-
-
-.hero-description{
-
-    max-width:1050px;
-
-    margin:0 auto;
-
-    padding:0 25px 25px;
-
-    color:#fff;
-
-    font-size:16px;
-
-    font-weight:800;
-
-    line-height:1.8;
-
-    text-align:center;
-
-}
-
-
-/* =====================================================
-   PROGRAMS - 6 CARDS
-===================================================== */
-
-.programs{
-
-    padding:55px 20px;
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-}
-
-
-.programs-title{
-
-    text-align:center;
-
-    color:var(--bright-gold);
-
-    font-size:30px;
-
-    font-weight:900;
-
-    margin-bottom:35px;
-
-}
-
-
-.courses{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(2,minmax(0,1fr));
-
-    gap:30px 20px;
-
-}
-
-
-.course-card{
-
-    background:
-
-        linear-gradient(
-            145deg,
-            #0b2d54,
-            #071f3d
-        );
-
-    border:2px solid var(--gold);
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    box-shadow:0 7px 20px rgba(0,0,0,.30);
-
-    transition:.3s ease;
-
-}
-
-
-.course-card:hover{
-
-    transform:translateY(-7px);
-
-    border-color:var(--bright-gold);
-
-    box-shadow:0 12px 28px rgba(0,0,0,.40);
-
-}
-
-
-.course-card img{
-
-    width:100%;
-
-    height:230px;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
-
-.course-content{
-
-    padding:22px 20px;
-
-    text-align:center;
-
-}
-
-
-.course-content h3{
-
-    color:var(--bright-gold);
-
-    font-size:20px;
-
-    font-weight:800;
-
-    margin-bottom:10px;
-
-}
-
-
-.course-content p{
-
-    color:#fff;
-
-    font-size:14px;
-
-    line-height:1.6;
-
-    margin-bottom:20px;
-
-}
-
-
-.course-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:10px;
-
-}
-
-
-.btn-details{
-
-    background:#315fa5;
-
-    color:#fff;
-
-    padding:11px 30px;
-
-    border-radius:7px;
-
-    text-decoration:none;
-
-    font-size:15px;
-
-    font-weight:700;
-
-}
-
-
-.btn-details:hover{
-
-    background:#3f73c0;
-
-    transform:translateY(-2px);
-
-}
-
-
-.btn-register{
-
-    background:var(--bright-gold);
-
-    color:#08203d;
-
-    padding:11px 25px;
-
-    border-radius:7px;
-
-    text-decoration:none;
-
-    font-weight:800;
-
-}
-
-
-.btn-register:hover{
-
-    background:#fff;
-
-    transform:translateY(-2px);
-
-}
-
-
-/* =====================================================
-   REGULAR COURSES
-===================================================== */
-
-.regular-courses{
-
-    background:#f8f9fa;
-
-    padding:75px 20px;
-
-    text-align:center;
-
-}
-
-
-.regular-courses h2{
-
-    color:#1a1a1a;
-
-    font-size:2.6em;
-
-    font-weight:800;
-
-    margin-bottom:12px;
-
-}
-
-
-.gold-line{
-
-    width:80px;
-
-    height:3px;
-
-    background:var(--bright-gold);
-
-    margin:0 auto 40px;
-
-}
-
-
-.regular-list{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(2,minmax(280px,1fr));
-
-    gap:15px;
-
-    max-width:750px;
-
-    margin:0 auto;
-
-    text-align:left;
-
-}
-
-
-.regular-item{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    background:#fff;
-
-    padding:15px 20px;
-
-    border-radius:8px;
-
-    box-shadow:0 2px 8px rgba(0,0,0,.06);
-
-}
-
-
-.regular-dot{
-
-    width:8px;
-
-    height:8px;
-
-    min-width:8px;
-
-    background:var(--gold);
-
-    border-radius:50%;
-
-}
-
-
-.regular-item p{
-
-    color:#333;
-
-    font-size:1em;
-
-    font-weight:500;
-
-}
-
-
-/* =====================================================
-   SHORT COURSES
-===================================================== */
-
-.short-courses{
-
-    background:#1E3A8A;
-
-    padding:60px 20px;
-
-}
-
-
-.section-title{
-
-    text-align:center;
-
-    color:var(--bright-gold);
-
-    font-size:2.5rem;
-
-    font-weight:800;
-
-    margin-bottom:10px;
-
-}
-
-
-.short-grid{
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,minmax(0,1fr));
-
-    gap:20px;
-
-}
-
-
-.short-course{
-
-    background:
-
-        linear-gradient(
-            145deg,
-            #0b2d54,
-            #071f3d
-        );
-
-    border:1px solid rgba(255,215,0,.30);
-
-    border-radius:14px;
-
-    padding:25px 20px;
-
-    text-align:center;
-
-    transition:.3s ease;
-
-}
-
-
-.short-course:hover{
-
-    transform:translateY(-5px);
-
-    border-color:var(--bright-gold);
-
-}
-
-
-.short-course-icon{
-
-    display:block;
-
-    font-size:1.7rem;
-
-    margin-bottom:10px;
-
-}
-
-
-.short-course h3{
-
-    color:#fff;
-
-    font-size:17px;
-
-}
-
-
-/* =====================================================
-   WHO WE ARE
-===================================================== */
-
-.who-we-are{
-
-    background:#fff;
-
-    padding:60px 20px;
-
-    text-align:center;
-
-}
-
-
-.who-we-are h2{
-
-    color:#1a1a1a;
-
-    font-size:2.2em;
-
-    font-weight:700;
-
-    margin-bottom:10px;
-
-}
-
-
-.who-we-are h3{
-
-    color:#2c2c2c;
-
-    font-size:1.3em;
-
-    margin-bottom:15px;
-
-}
-
-
-.who-description{
-
-    color:#555;
-
-    max-width:750px;
-
-    margin:0 auto 40px;
-
-    line-height:1.7;
-
-}
-
-
-.stats{
-
-    display:flex;
-
-    gap:20px;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-}
-
-
-.stat-card{
-
-    flex:1;
-
-    min-width:180px;
-
-    max-width:200px;
-
-    background:#fff;
-
-    border-radius:10px;
-
-    padding:25px 15px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.07);
-
-}
-
-
-.stat-icon{
-
-    width:50px;
-
-    height:50px;
-
-    border-radius:10px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin:0 auto 15px;
-
-    font-size:22px;
-
-}
-
-
-.green-icon{background:#10B981;}
-
-.blue-icon{background:#2563EB;}
-
-.orange-icon{background:#F59E0B;}
-
-.red-icon{background:#EF4444;}
-
-
-.stat-card h4{
-
-    color:#1a1a1a;
-
-    font-size:2em;
-
-    margin-bottom:5px;
-
-}
-
-
-.stat-card p{
-
-    color:#666;
-
-}
-
-
-/* =====================================================
-   WHY CHOOSE US
-===================================================== */
-
-.why-us{
-
-    padding:60px 20px;
-
-    background:#1E3A8A;
-
-    text-align:center;
-
-}
-
-
-.why-us h2{
-
-    color:var(--bright-gold);
-
-    font-size:2.2em;
-
-    margin-bottom:10px;
-
-    font-weight:800;
-
-}
-
-
-.why-subtitle{
-
-    color:#E0E7FF;
-
-    max-width:700px;
-
-    margin:0 auto 40px;
-
-    line-height:1.6;
-
-}
-
-
-.grid-why{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(4,minmax(0,1fr));
-
-    gap:25px;
-
-}
-
-
-.why-card{
-
-    background:#173985;
-
-    border:2px solid var(--bright-gold);
-
-    border-radius:15px;
-
-    padding:30px 20px;
-
-    transition:.3s ease;
-
-}
-
-
-.why-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 0 20px var(--bright-gold);
-
-}
-
-
-.icon-box{
-
-    width:75px;
-
-    height:75px;
-
-    background:var(--bright-gold);
-
-    color:#1E3A8A;
-
-    border-radius:18px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:2.2em;
-
-    margin:0 auto 15px;
-
-}
-
-
-.why-card h4{
-
-    color:var(--bright-gold);
-
-    font-size:1.1em;
-
-    margin-bottom:8px;
-
-    font-weight:800;
-
-}
-
-
-.why-card p{
-
-    color:#E0E7FF;
-
-    font-size:.9em;
-
-}
-
-
-/* =====================================================
-   TRUST
-===================================================== */
-
-.trust-section{
-
-    padding:60px 20px;
-
-    background:var(--blue);
-
-}
-
-
-.trust-section h2{
-
-    text-align:center;
-
-    color:var(--bright-gold);
-
-    margin-bottom:35px;
-
-}
-
-
-.trust-list{
-
-    max-width:800px;
-
-    margin:auto;
-
-}
-
-
-.trust-card{
-
-    background:var(--light-blue);
-
-    border-radius:15px;
-
-    padding:25px;
-
-    margin-bottom:20px;
-
-}
-
-
-.trust-card p{
-
-    color:#fff;
-
-}
-
-
-.trust-green{
-
-    border:2px solid #25D366;
-
-}
-
-
-.trust-green h3{
-
-    color:#25D366;
-
-}
-
-
-.trust-gold{
-
-    border:2px solid var(--gold);
-
-}
-
-
-.trust-gold h3{
-
-    color:var(--gold);
-
-}
-
-
-.trust-blue{
-
-    border:2px solid #3b82f6;
-
-}
-
-
-.trust-blue h3{
-
-    color:#3b82f6;
-
-}
-
-
-/* =====================================================
-   3 STEPS
-===================================================== */
-
-.steps{
-
-    padding:75px 20px;
-
-    background:#1E3A8A;
-
-}
-
-
-.steps h2{
-
-    text-align:center;
-
-    color:var(--bright-gold);
-
-    font-size:2.2em;
-
-    margin-bottom:40px;
-
-}
-
-
-.steps-list{
-
-    max-width:650px;
-
-    margin:auto;
-
-}
-
-
-.step{
-
-    margin-bottom:30px;
-
-}
-
-
-.step h4{
-
-    color:var(--bright-gold);
-
-    font-size:1.3em;
-
-    margin-bottom:8px;
-
-}
-
-
-.step p{
-
-    color:#E0E7FF;
-
-    line-height:1.6;
-
-}
-
-
-/* =====================================================
-   FREE TRIAL MAIN
-===================================================== */
-
-.free-trial-box{
-
-    background:
-
-        linear-gradient(
-            135deg,
-            #FFD700,
-            #FFA500
-        );
-
-    border:3px solid #1E3A8A;
-
-    border-radius:20px;
-
-    padding:25px 30px;
-
-    margin:40px 20px;
-
-    box-shadow:0 8px 20px rgba(30,58,138,.25);
-
-}
-
-
-.trial-inner{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-
-.trial-icon{
-
-    font-size:55px;
-
-}
-
-
-.trial-text{
-
-    flex:1;
-
-}
-
-
-.trial-text h3{
-
-    color:#1E3A8A;
-
-    font-size:1.8em;
-
-    font-weight:900;
-
-}
-
-
-.trial-text p{
-
-    color:#1E3A8A;
-
-    font-weight:600;
-
-}
-
-
-.trial-btn{
-
-    background:#1E3A8A;
-
-    color:#FFD700;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:800;
-
-    white-space:nowrap;
-
-}
-
-
-.trial-btn:hover{
-
-    background:#fff;
-
-    color:#1E3A8A;
-
-}
-
-
-/* =====================================================
-   FLOATING FREE TRIAL
-===================================================== */
-
-.free-trial-float{
-
-    position:fixed;
-
-    left:20px;
-
-    bottom:25px;
-
-    z-index:999;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    padding:12px 18px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            #FFD700,
-            #FFA500
-        );
-
-    color:#071f3d;
-
-    border:2px solid #fff;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-    font-weight:900;
-
-    box-shadow:0 6px 20px rgba(0,0,0,.35);
-
-    animation:trialPulse 2s infinite;
-
-}
-
-
-@keyframes trialPulse{
-
-    0%,100%{
-        box-shadow:0 6px 20px rgba(0,0,0,.35);
-    }
-
-    50%{
-        box-shadow:0 6px 25px rgba(255,215,0,.65);
-    }
-
-}
-
-
-/* =====================================================
-   FEE PLANS
-===================================================== */
-
-.pricing-img{
-
-    padding:60px 20px;
-
-    background:#0A1F44;
-
-    text-align:center;
-
-}
-
-
-.pricing-img h2{
-
-    color:var(--bright-gold);
-
-    font-size:2.2em;
-
-    margin-bottom:30px;
-
-}
-
-
-.pricing-img img{
-
-    width:100%;
-
-    max-width:900px;
-
-    border-radius:15px;
-
-    border:2px solid var(--bright-gold);
-
-}
-
-
-/* =====================================================
-   ADMISSION
-===================================================== */
-
-.admission-section{
-
-    padding:60px 20px;
-
-    background:var(--blue);
-
-}
-
-
-.admission-section h2{
-
-    text-align:center;
-
-    color:var(--bright-gold);
-
-    margin-bottom:35px;
-
-}
-
-
-.student-form{
-
-    max-width:700px;
-
-    margin:auto;
-
-    background:var(--light-blue);
-
-    padding:40px;
-
-    border-radius:15px;
-
-    border:2px solid var(--gold);
-
-}
-
-
-.student-form h3{
-
-    color:var(--gold);
-
-    margin:25px 0 10px;
-
-}
-
-
-.student-form h3:first-child{
-
-    margin-top:0;
-
-}
-
-
-.student-form input,
-
-.student-form select,
-
-.student-form textarea{
-
-    width:100%;
-
-    padding:15px;
-
-    margin:8px 0;
-
-    border-radius:10px;
-
-    border:2px solid #4a70b0;
-
-    font-family:inherit;
-
-    font-size:15px;
-
-}
-
-
-.student-form textarea{
-
-    resize:vertical;
-
-}
-
-
-.student-form button{
-
-    width:100%;
-
-    padding:18px;
-
-    margin-top:15px;
-
-    background:var(--bright-gold);
-
-    color:var(--blue);
-
-    font-weight:800;
-
-    border:none;
-
-    border-radius:10px;
-
-    font-size:1.1em;
-
-    cursor:pointer;
-
-}
-
-
-.student-form button:hover{
-
-    background:#fff;
-
-}
-
-
-/* =====================================================
-   SOCIAL
-===================================================== */
-
-.social-section{
-
-    text-align:center;
-
-    padding:50px 20px;
-
-    background:var(--blue);
-
-    border-top:3px solid var(--gold);
-
-}
-
-
-.social-section h2{
-
-    color:var(--gold);
-
-    font-size:2.5em;
-
-    margin-bottom:15px;
-
-}
-
-
-.social-section > p{
-
-    color:#fff;
-
-    margin-bottom:35px;
-
-}
-
-
-.social-grid{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(2,minmax(280px,1fr));
-
-    gap:25px;
-
-    max-width:1000px;
-
-    margin:auto;
-
-}
-
-
-.social-card{
-
-    background:var(--light-blue);
-
-    padding:25px;
-
-    border-radius:15px;
-
-}
-
-
-.facebook-card{
-
-    border:2px solid #1877F2;
-
-}
-
-
-.instagram-card{
-
-    border:2px solid #dd2a7b;
-
-}
-
-
-.social-icon{
-
-    font-size:40px;
-
-    margin-bottom:10px;
-
-}
-
-
-.facebook-card .social-icon,
-
-.facebook-card h3{
-
-    color:#1877F2;
-
-}
-
-
-.instagram-card .social-icon,
-
-.instagram-card h3{
-
-    color:#dd2a7b;
-
-}
-
-
-.social-card h3{
-
-    margin:10px 0;
-
-}
-
-
-.social-card a{
-
-    color:#fff;
-
-    word-break:break-word;
-
-}
-
-
-.social-button{
-
-    display:inline-block;
-
-    color:#fff;
-
-    padding:10px 20px;
-
-    border-radius:8px;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    margin-top:15px;
-
-}
-
-
-.facebook-button{
-
-    background:#1877F2;
-
-}
-
-
-.instagram-button{
-
-    background:
-
-        linear-gradient(
-            45deg,
-            #f58529,
-            #dd2a7b,
-            #8134AF
-        );
-
-}
-
-
-/* =====================================================
-   FOOTER
-===================================================== */
-
-.main-footer{
-
-    margin-top:40px;
-
-}
-
-
-.payment-section{
-
-    background:#0A1F44;
-
-    padding:20px;
-
-    text-align:center;
-
-    border-bottom:2px solid var(--bright-gold);
-
-}
-
-
-.payment-section img{
-
-    max-width:500px;
-
-    width:90%;
-
-}
-
-
-.copyright-bar{
-
-    background:var(--bright-gold);
-
-    padding:18px 20px;
-
-    text-align:center;
-
-}
-
-
-.copyright-bar p{
-
-    color:#1E3A8A;
-
-    font-weight:800;
-
-}
-
-
-.contact-footer{
-
-    background:#071f3d;
-
-    padding:30px 20px;
-
-    text-align:center;
-
-}
-
-
-.contact-footer p{
-
-    color:#fff;
-
-    margin:7px 0;
-
-}
-
-
-/* =====================================================
-   FLOATING WHATSAPP
-===================================================== */
-
-.whatsapp-float{
-
-    position:fixed;
-
-    width:62px;
-
-    height:62px;
-
-    right:25px;
-
-    bottom:25px;
-
-    background:#25D366;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    z-index:1000;
-
-    text-decoration:none;
-
-    border:3px solid #fff;
-
-    box-shadow:0 5px 18px rgba(0,0,0,.35);
-
-}
-
-
-.whatsapp-float:hover{
-
-    transform:scale(1.08);
-
-}
-
-
-.whatsapp-float .whatsapp-svg{
-
-    width:34px;
-
-    height:34px;
-
-    fill:#fff;
-
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media(max-width:900px){
-
-    .grid-why{
-
-        grid-template-columns:
-            repeat(2,minmax(0,1fr));
-
-    }
-
-
-    .short-grid{
-
-        grid-template-columns:
-            repeat(2,minmax(0,1fr));
-
-    }
-
-}
-
-
-@media(max-width:768px){
-
-    .hero{
-
-        padding:28px 15px 45px;
-
-    }
-
-
-    .main-logo{
-
-        width:120px;
-
-        height:120px;
-
-    }
-
-
-    .logo-text h1{
-
-        font-size:44px;
-
-    }
-
-
-    .logo-text p{
-
-        font-size:17px;
-
-    }
-
-
-    .whatsapp-btn{
-
-        padding:13px 25px;
-
-        font-size:16px;
-
-    }
-
-
-    .welcome-box{
-
-        padding:15px 12px 17px;
-
-    }
-
-
-    .welcome-small{
-
-        font-size:11px;
-
-        letter-spacing:2px;
-
-    }
-
-
-    .welcome-title{
-
-        font-size:21px;
-
-    }
-
-
-    .welcome-subtitle{
-
-        font-size:12px;
-
-    }
-
-
-    .main-heading{
-
-        font-size:27px;
-
-        padding:16px 12px 10px;
-
-    }
-
-
-    .hero-description{
-
-        font-size:14px;
-
-        line-height:1.7;
-
-        padding:0 15px 21px;
-
-    }
-
-
-    .courses{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .regular-list{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .grid-why{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .short-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .social-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .trial-inner{
-
-        justify-content:center;
-
-        text-align:center;
-
-    }
-
-
-    .trial-text{
-
-        flex:auto;
-
-    }
-
-
-    .student-form{
-
-        padding:25px 18px;
-
-    }
-
-
-    .free-trial-float{
-
-        left:12px;
-
-        bottom:18px;
-
-        font-size:12px;
-
-        padding:10px 14px;
-
-    }
-
-
-    .whatsapp-float{
-
-        right:15px;
-
-        bottom:18px;
-
-    }
-
-}
-
-
-@media(max-width:430px){
-
-    .main-logo{
-
-        width:105px;
-
-        height:105px;
-
-    }
-
-
-    .logo-text h1{
-
-        font-size:37px;
-
-    }
-
-
-    .logo-text p{
-
-        font-size:14px;
-
-    }
-
-
-    .main-heading{
-
-        font-size:21px;
-
-    }
-
-
-    .hero-description{
-
-        font-size:12.5px;
-
-    }
-
-
-    .course-buttons{
-
-        flex-direction:column;
-
-    }
-
-
-    .btn-details,
-
-    .btn-register{
-
-        width:100%;
-
-    }
-
-
-    .free-trial-float{
-
-        max-width:170px;
-
-    }
-
-
-    .whatsapp-float{
-
-        width:55px;
-
-        height:55px;
-
-    }
-
-
-    .whatsapp-float .whatsapp-svg{
-
-        width:30px;
-
-        height:30px;
-
-    }
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fatima Islamic Academy</title>
+
+  <meta name="description"
+        content="Fatima Islamic Academy - Online Quran Learning Platform">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #071f48;
+      color: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    /* =========================
+       WHATSAPP ICON
+    ========================== */
+
+    .whatsapp-icon {
+      width: 34px;
+      height: 34px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: auto;
+      padding: 40px 20px 45px;
+      text-align: center;
+      background: #071f48;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+    }
+
+    .brand-title {
+      font-size: clamp(42px, 10vw, 72px);
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: #d89e00;
+      margin-bottom: 5px;
+    }
+
+    .brand-subtitle {
+      font-size: clamp(20px, 5vw, 30px);
+      font-weight: 800;
+      letter-spacing: 5px;
+      margin-bottom: 28px;
+    }
+
+    .whatsapp-main {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: min(380px, 90%);
+      min-height: 65px;
+      border-radius: 50px;
+      background: #25D366;
+      border: 3px solid #55e88a;
+      color: white;
+      font-size: 24px;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      transition: .25s;
+    }
+
+    .whatsapp-main:hover {
+      transform: translateY(-3px);
+      background: #20bd5b;
+    }
+
+
+    /* =========================
+       WELCOME
+    ========================== */
+
+    .welcome {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto 35px;
+      padding: 30px 25px;
+      text-align: center;
+      border: 2px solid #a58a20;
+      border-radius: 25px;
+      background: #142f59;
+    }
+
+    .welcome-small {
+      color: #ffd400;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+
+    .welcome h2 {
+      font-size: clamp(28px, 6vw, 43px);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .gold {
+      color: #d9a000;
+    }
+
+    .yellow-line {
+      width: 145px;
+      height: 5px;
+      background: #ffd400;
+      border-radius: 20px;
+      margin: 0 auto 18px;
+    }
+
+    .welcome p {
+      font-size: clamp(18px, 4vw, 25px);
+      font-weight: 600;
+      color: #e6ecf7;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================== */
+
+    .intro {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto 55px;
+      padding: 30px 25px;
+      text-align: center;
+      border-radius: 25px;
+      border: 2px solid #168a5b;
+      background: #07804c;
+      box-shadow: 0 15px 35px rgba(0,0,0,.15);
+    }
+
+    .intro h2 {
+      font-size: clamp(27px, 6vw, 42px);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+
+    .intro p {
+      font-size: clamp(17px, 4vw, 25px);
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       SECTION TITLES
+    ========================== */
+
+    .section-title {
+      text-align: center;
+      color: #ffd400;
+      font-size: clamp(40px, 9vw, 65px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 45px;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 150px;
+      height: 5px;
+      background: #ffd400;
+      margin: 15px auto 0;
+      border-radius: 20px;
+    }
+
+
+    /* =========================
+       PROGRAMS
+    ========================== */
+
+    .programs {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto 60px;
+    }
+
+    .program-card {
+      overflow: hidden;
+      border: 3px solid #d4a600;
+      border-radius: 28px;
+      background: #092a56;
+      margin-bottom: 25px;
+      box-shadow: 0 15px 35px rgba(0,0,0,.22);
+    }
+
+    .program-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .program-content {
+      padding: 25px 20px 30px;
+      text-align: center;
+    }
+
+    .program-content h3 {
+      color: #ffd400;
+      font-size: clamp(28px, 6vw, 42px);
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+
+    .program-content p {
+      font-size: clamp(18px, 4vw, 25px);
+      color: #f1f4fa;
+      margin-bottom: 18px;
+    }
+
+    .details-btn,
+    .register-btn {
+      width: 90%;
+      max-width: 600px;
+      min-height: 60px;
+      border: none;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px auto;
+      font-size: 24px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .details-btn {
+      background: #376ab1;
+      color: white;
+    }
+
+    .register-btn {
+      background: #ffd000;
+      color: #09234b;
+    }
+
+    .details-btn:hover,
+    .register-btn:hover {
+      transform: translateY(-3px);
+      filter: brightness(1.06);
+    }
+
+
+    /* =========================
+       REGULAR COURSES
+    ========================== */
+
+    .regular-section {
+      background: #f7f7f9;
+      color: #202020;
+      padding: 55px 20px 65px;
+    }
+
+    .regular-section .section-title {
+      color: #111;
+      margin-bottom: 45px;
+    }
+
+    .regular-section .section-title::after {
+      background: #ffd400;
+    }
+
+    .course-list {
+      width: min(900px, 100%);
+      margin: auto;
+    }
+
+    .course-item {
+      background: white;
+      border-radius: 18px;
+      padding: 20px 25px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 22px rgba(0,0,0,.08);
+      font-size: clamp(18px, 4vw, 27px);
+      font-weight: 500;
+    }
+
+    .course-item::before {
+      content: "•";
+      color: #c39200;
+      font-size: 38px;
+      font-weight: 900;
+      vertical-align: -4px;
+      margin-right: 17px;
+    }
+
+
+    /* =========================
+       SHORT COURSES
+    ========================== */
+
+    .short-section {
+      background: #294294;
+      padding: 55px 20px 65px;
+    }
+
+    .short-list {
+      width: min(900px, 100%);
+      margin: auto;
+    }
+
+    .short-card {
+      background: #092a56;
+      border: 2px solid #647238;
+      border-radius: 25px;
+      min-height: 175px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.15);
+    }
+
+    .short-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .short-card h3 {
+      font-size: clamp(22px, 5vw, 32px);
+      line-height: 1.3;
+    }
+
+
+    /* =========================
+       WHO WE ARE
+    ========================== */
+
+    .who-section {
+      background: #ffffff;
+      color: #222;
+      padding: 55px 20px 60px;
+    }
+
+    .who-container {
+      width: min(900px, 100%);
+      margin: auto;
+      text-align: center;
+    }
+
+    .who-container h2 {
+      font-size: clamp(40px, 9vw, 65px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .who-container > p:first-of-type {
+      font-size: clamp(22px, 5vw, 32px);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .who-description {
+      max-width: 800px;
+      margin: 0 auto 35px;
+      color: #555;
+      font-size: clamp(18px, 4vw, 25px);
+      line-height: 1.6;
+    }
+
+    .stats-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px 20px;
+      box-shadow: 0 5px 22px rgba(0,0,0,.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-icon {
+      width: 78px;
+      height: 78px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .students {
+      background: #19b98b;
+    }
+
+    .courses {
+      background: #3267dc;
+    }
+
+    .teachers {
+      background: #f3a300;
+    }
+
+    .countries {
+      background: #ed4b4b;
+    }
+
+    .stat-card strong {
+      font-size: 50px;
+      line-height: 1.1;
+      color: #111;
+    }
+
+    .stat-card span {
+      font-size: 24px;
+      color: #666;
+      margin-top: 7px;
+    }
+
+
+    /* =========================
+       WHY CHOOSE US
+    ========================== */
+
+    .why-section {
+      background: #294294;
+      color: white;
+      padding: 55px 20px 65px;
+    }
+
+    .why-container {
+      width: min(900px, 100%);
+      margin: auto;
+      text-align: center;
+    }
+
+    .why-container h2 {
+      color: #ffd400;
+      font-size: clamp(42px, 9vw, 65px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .why-container > p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: clamp(18px, 4vw, 25px);
+      line-height: 1.55;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .why-card {
+      background: #092a56;
+      border: 2px solid #647238;
+      border-radius: 22px;
+      padding: 22px 18px;
+    }
+
+    .why-icon {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    .why-card h3 {
+      color: #ffd400;
+      font-size: 23px;
+      margin-bottom: 7px;
+    }
+
+    .why-card p {
+      color: #e5eaf2;
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      text-align: center;
+      background: #041630;
+      padding: 40px 20px 95px;
+    }
+
+    footer h2 {
+      color: #ffd400;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #d8dfeb;
+    }
+
+
+    /* =========================
+       FIXED FREE TRIAL
+    ========================== */
+
+    .fixed-trial {
+      position: fixed;
+      left: 28px;
+      bottom: 25px;
+      z-index: 9999;
+      background: #e9c329;
+      color: white;
+      border: 3px solid #ffd900;
+      border-radius: 50px;
+      padding: 18px 34px;
+      font-size: 21px;
+      font-weight: 900;
+      box-shadow: 0 8px 25px rgba(0,0,0,.3);
+      transition: .25s;
+    }
+
+    .fixed-trial:hover {
+      transform: translateY(-4px);
+    }
+
+
+    /* =========================
+       FIXED WHATSAPP
+    ========================== */
+
+    .fixed-whatsapp {
+      position: fixed;
+      right: 28px;
+      bottom: 25px;
+      width: 72px;
+      height: 72px;
+      z-index: 9999;
+      border-radius: 50%;
+      background: #25D366;
+      border: 4px solid white;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,.3);
+      transition: .25s;
+    }
+
+    .fixed-whatsapp:hover {
+      transform: scale(1.08);
+      background: #20bd5b;
+    }
+
+    .fixed-whatsapp .whatsapp-icon {
+      width: 43px;
+      height: 43px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 600px) {
+
+      .hero {
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+
+      .logo {
+        width: 185px;
+        height: 185px;
+      }
+
+      .brand-subtitle {
+        letter-spacing: 3px;
+      }
+
+      .welcome,
+      .intro,
+      .programs {
+        width: calc(100% - 30px);
+      }
+
+      .welcome {
+        padding: 25px 18px;
+      }
+
+      .intro {
+        padding: 25px 18px;
+      }
+
+      .program-image {
+        height: 340px;
+      }
+
+      .program-card {
+        border-radius: 24px;
+      }
+
+      .program-content {
+        padding: 25px 15px;
+      }
+
+      .details-btn,
+      .register-btn {
+        width: 95%;
+        min-height: 58px;
+        font-size: 21px;
+      }
+
+      .regular-section,
+      .short-section,
+      .who-section,
+      .why-section {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .course-item {
+        padding: 18px 16px;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .fixed-trial {
+        left: 20px;
+        bottom: 20px;
+        padding: 16px 25px;
+        font-size: 17px;
+      }
+
+      .fixed-whatsapp {
+        right: 20px;
+        bottom: 20px;
+        width: 65px;
+        height: 65px;
+      }
+
+      .fixed-whatsapp .whatsapp-icon {
+        width: 38px;
+        height: 38px;
+      }
+
+    }
+
+
+    @media (max-width: 380px) {
+
+      .fixed-trial {
+        left: 12px;
+        padding: 14px 20px;
+        font-size: 15px;
+      }
+
+      .fixed-whatsapp {
+        right: 12px;
+        width: 60px;
+        height: 60px;
+      }
+
+      .fixed-whatsapp .whatsapp-icon {
+        width: 35px;
+        height: 35px;
+      }
+
+      .program-image {
+        height: 290px;
+      }
+
+    }
+
+  </style>
 </head>
 
 
 <body>
 
 
-<!-- =====================================================
-     HERO / HEADER
-===================================================== -->
+  <!-- =========================
+       WHATSAPP SVG
+  ========================== -->
 
-<header class="hero">
+  <svg style="display:none">
 
+    <symbol id="whatsapp-logo"
+            viewBox="0 0 24 24">
 
-    <!-- LOGO -->
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.59 5.95L.05 24l6.29-1.65a11.9 11.9 0 0 0 5.71 1.46h.01c6.56 0 11.9-5.34 11.9-11.91 0-3.18-1.24-6.17-3.44-8.42ZM12.06 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.47 4.45-9.92 9.93-9.92 2.65 0 5.14 1.03 7.01 2.91a9.85 9.85 0 0 1 2.9 7.02c0 5.47-4.45 9.93-9.92 9.93Zm5.44-7.44c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
 
-    <div class="logo-area">
+    </symbol>
 
-        <img
-            src="logo.jpg.jpg"
-            alt="Fatima Islamic Academy Logo"
-            class="main-logo"
-        >
+  </svg>
 
 
-        <div class="logo-text">
+  <!-- =========================
+       HERO
+  ========================== -->
 
-            <h1>FATIMA</h1>
+  <header class="hero">
 
-            <p>ISLAMIC ACADEMY</p>
+    <img
+      src="logo.jpg.jpg"
+      alt="Fatima Islamic Academy Logo"
+      class="logo"
+    >
 
-        </div>
+    <h1 class="brand-title">
+      FATIMA
+    </h1>
 
-    </div>
+    <div class="brand-subtitle">
+      ISLAMIC ACADEMY
+    </div>
 
 
+    <!-- WHATSAPP -->
 
-    <!-- PROFESSIONAL WHATSAPP BUTTON -->
+    <a
+      class="whatsapp-main"
+      href="https://wa.me/923130934215"
+      target="_blank"
+      rel="noopener"
+    >
 
-    <a
-        href="https://wa.me/923130934215"
-        class="whatsapp-btn"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
+      <svg class="whatsapp-icon">
+        <use href="#whatsapp-logo"></use>
+      </svg>
 
-        <svg
-            class="whatsapp-svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-        >
+      WhatsApp Us
 
-            <path d="M19.11 17.21c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.3s.98 2.67 1.12 2.85c.14.18 1.92 2.93 4.65 4.11.65.28 1.15.45 1.54.57.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.82-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
+    </a>
 
-            <path d="M16.02 3C8.84 3 3 8.83 3 16c0 2.29.6 4.44 1.65 6.3L3 29l6.86-1.61A12.94 12.94 0 0 0 16.02 29C23.19 29 29 23.17 29 16S23.19 3 16.02 3zm0 23.65c-2.01 0-3.98-.54-5.69-1.56l-.41-.24-4.07.95.97-3.96-.27-.41A10.98 10.98 0 1 1 16.02 26.65z"/>
+  </header>
 
-        </svg>
 
-        WhatsApp Us
+  <!-- =========================
+       WELCOME
+  ========================== -->
 
-    </a>
+  <section class="welcome">
 
+    <div class="welcome-small">
+      ASSALAM-O-ALAIKUM
+    </div>
 
+    <h2>
+      Welcome to
+      <span class="gold">
+        Fatima Islamic Academy
+      </span>
+    </h2>
 
-    <!-- PROFESSIONAL WELCOME -->
+    <div class="yellow-line"></div>
 
-    <div class="welcome-box">
+    <p>
+      Your Trusted Online Quran Learning Platform
+    </p>
 
-        <div class="welcome-small">
+  </section>
 
-            ASSALAM-O-ALAIKUM
 
-        </div>
+  <!-- =========================
+       INTRO
+  ========================== -->
 
+  <section class="intro">
 
-        <div class="welcome-title">
+    <h2>
+      Online Quran Academy for<br>
+      Kids &amp; Adults
+    </h2>
 
-            Welcome to
-            <span>Fatima Islamic Academy</span>
+    <p>
+      One-to-one live Quran classes in Tajweed,
+      Noorani Qaida, Hifz, Tafseer and Islamic
+      Studies with certified male and female
+      teachers. Serving families across the USA,
+      UK, Canada, UAE, and worldwide students with
+      flexible schedules for every time zone that
+      suits you.
+    </p>
 
-        </div>
+  </section>
 
 
-        <div class="welcome-line"></div>
+  <!-- =========================
+       OUR PROGRAMS
+  ========================== -->
 
+  <section class="programs">
 
-        <p class="welcome-subtitle">
+    <h2 class="section-title">
+      Our Programs
+    </h2>
 
-            Your Trusted Online Quran Learning Platform
 
-        </p>
+    <!-- 1 -->
 
-    </div>
+    <article class="program-card">
 
+      <img
+        src="qaida.jpg.jpg"
+        alt="Noorani Qaida"
+        class="program-image"
+      >
 
+      <div class="program-content">
 
-    <!-- GREEN HEADING + DESCRIPTION -->
+        <h3>
+          Learn Noorani Qaida
+        </h3>
 
-    <div class="content-green">
+        <p>
+          Start reading the Quran correctly with
+          proper pronunciation.
+        </p>
 
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
-        <div class="main-heading">
+        <a
+          href="https://wa.me/923130934215"
+          class="register-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Register
+        </a>
 
-            Online Quran Academy for Kids &amp; Adults
+      </div>
 
-        </div>
+    </article>
 
 
-        <p class="hero-description">
+    <!-- 2 -->
 
-            One-to-one live Quran classes in Tajweed, Noorani Qaida,
-            Hifz, Tafseer and Islamic Studies with certified male and
-            female teachers. Serving families across the USA, UK,
-            Canada, UAE, and worldwide students with flexible schedules
-            for every time zone that suits you.
+    <article class="program-card">
 
-        </p>
+      <img
+        src="quran.jpg.jpg"
+        alt="Quran Reading with Tajweed"
+        class="program-image"
+      >
 
+      <div class="program-content">
 
-    </div>
+        <h3>
+          Quran Reading with Tajweed
+        </h3>
 
-</header>
+        <p>
+          Master the rules of Tajweed for
+          beautiful recitation.
+        </p>
 
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
+        <a
+          href="https://wa.me/923130934215"
+          class="register-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Register
+        </a>
 
-<!-- =====================================================
-     6 MAIN PROGRAM CARDS
-===================================================== -->
+      </div>
 
-<section class="programs">
+    </article>
 
 
-    <h2 class="programs-title">
+    <!-- 3 -->
 
-        Our Programs
+    <article class="program-card">
 
-    </h2>
+      <img
+        src="hifz.jpg.jpg"
+        alt="Memorize Quran Online"
+        class="program-image"
+      >
 
+      <div class="program-content">
 
-    <div class="courses">
+        <h3>
+          Memorize Quran Online
+        </h3>
 
+        <p>
+          Memorize with personalized Hifz plans
+          and teachers.
+        </p>
 
-        <!-- CARD 1 -->
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
-        <article class="course-card">
+        <a
+          href="https://wa.me/923130934215"
+          class="register-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Register
+        </a>
 
-            <img
-                src="qaida.jpg.jpg"
-                alt="Learn Noorani Qaida Online"
-            >
+      </div>
 
-            <div class="course-content">
+    </article>
 
-                <h3>
-                    Learn Noorani Qaida
-                </h3>
 
-                <p>
-                    Start reading the Quran correctly with proper pronunciation.
-                </p>
+    <!-- 4 -->
 
-                <div class="course-buttons">
+    <article class="program-card">
 
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
+      <img
+        src="tafseer.jpg.jpg"
+        alt="Tafseer and Translation"
+        class="program-image"
+      >
 
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
+      <div class="program-content">
 
-                </div>
+        <h3>
+          Learn Tafseer and
+          Translation Online
+        </h3>
 
-            </div>
+        <p>
+          Gain deep insights into the meanings
+          of Holy Quran.
+        </p>
 
-        </article>
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
+        <a
+          href="https://wa.me/923130934215"
+          class="register-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Register
+        </a>
 
+      </div>
 
-        <!-- CARD 2 -->
+    </article>
 
-        <article class="course-card">
 
-            <img
-                src="quran.jpg.jpg"
-                alt="Quran Reading with Tajweed"
-            >
+    <!-- 5 -->
 
-            <div class="course-content">
+    <article class="program-card">
 
-                <h3>
-                    Quran Reading with Tajweed
-                </h3>
+      <img
+        src="arabic.jpg.jpg"
+        alt="Arabic Language and Grammar"
+        class="program-image"
+      >
 
-                <p>
-                    Master the rules of Tajweed for beautiful recitation.
-                </p>
+      <div class="program-content">
 
-                <div class="course-buttons">
+        <h3>
+          Learn Arabic Online
+        </h3>
 
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
+        <p>
+          Arabic Language &amp; Grammar for kids
+          and adults.
+        </p>
 
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
-                </div>
+        <a
+          href="https://wa.me/923130934215"
+          class="register-btn"
+          target="_blank"
+          rel="noopener"
+        >
+          Register
+        </a>
 
-            </div>
+      </div>
 
-        </article>
+    </article>
 
 
+    <!-- 6 -->
 
-        <!-- CARD 3 -->
+    <article class="program-card">
 
-        <article class="course-card">
+      <img
+        src="islamic.jpg.jpg"
+        alt="Islamic Studies"
+        class="program-image"
+      >
 
-            <img
-                src="hifz.jpg.jpg"
-                alt="Memorize Quran Online"
-            >
+      <div class="program-content">
 
-            <div class="course-content">
+        <h3>
+          Islamic Studies Online
+        </h3>
 
-                <h3>
-                    Memorize Quran Online
-                </h3>
+        <p>
+          Daily Dua's, Sunnah, Seerah and
+          basic Fiqh.
+        </p>
 
-                <p>
-                    Memorize with personalized Hifz plans and teachers.
-                </p>
+        <a href="#regular-courses" class="details-btn">
+          Details
+        </a>
 
-                <div class="course-buttons">
-
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
-
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- CARD 4 -->
-
-        <article class="course-card">
-
-            <img
-                src="tafseer.jpg.jpg"
-                alt="Learn Tafseer Online"
-            >
-
-            <div class="course-content">
-
-                <h3>
-                    Learn Tafseer and Translation Online
-                </h3>
-
-                <p>
-                    Gain deep insights into the meanings of Holy Quran.
-                </p>
-
-                <div class="course-buttons">
-
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
-
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- CARD 5 -->
-
-        <article class="course-card">
-
-            <img
-                src="arabic.jpg.jpg"
-                alt="Learn Arabic Online"
-            >
-
-            <div class="course-content">
-
-                <h3>
-                    Learn Arabic Online
-                </h3>
-
-                <p>
-                    Arabic Language &amp; Grammar for kids and adults.
-                </p>
-
-                <div class="course-buttons">
-
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
-
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- CARD 6 -->
-
-        <article class="course-card">
-
-            <img
-                src="islamic.jpg.jpg.jpg"
-                alt="Islamic Studies Online"
-            >
-
-            <div class="course-content">
-
-                <h3>
-                    Islamic Studies Online
-                </h3>
-
-                <p>
-                    Daily Dua's, Sunnah, Seerah and basic Fiqh.
-                </p>
-
-                <div class="course-buttons">
-
-                    <a
-                        href="#student-form"
-                        class="btn-details"
-                    >
-                        Details
-                    </a>
-
-                    <a
-                        href="https://wa.me/923130934215"
-                        class="btn-register"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Register
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     REGULAR COURSES
-===================================================== -->
-
-<section class="regular-courses">
-
-
-    <h2>
-        REGULAR Courses
-    </h2>
-
-
-    <div class="gold-line"></div>
-
-
-    <div class="regular-list">
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Learn Noorani Qaida Online</p>
-        </div>
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Quran Reading with Tajweed</p>
-        </div>
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Memorize Quran Online</p>
-        </div>
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Learn Tafsir Online</p>
-        </div>
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Learn Arabic Online</p>
-        </div>
-
-
-        <div class="regular-item">
-            <span class="regular-dot"></span>
-            <p>Learn Islamic Studies Online</p>
-        </div>
-
-
-        <div class="regular-item">
+        <a
+          href="https://wa.me/92313
