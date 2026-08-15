@@ -18,8 +18,8 @@ content="Fatima Islamic Academy offers online Quran classes with Tajweed, Nooran
 
 <!-- GOOGLE SEARCH / SITE IDENTITY -->
 <link rel="canonical" href="https://fatimaislamicacademy.com/">
-<link rel="icon" href="logo.jpg.jpg" type="image/jpeg">
-<link rel="apple-touch-icon" href="logo.jpg.jpg">
+<link rel="icon" href="favicon.png.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
 <meta name="application-name" content="Fatima Islamic Academy">
 <meta property="og:site_name" content="Fatima Islamic Academy">
 <meta property="og:title" content="Fatima Islamic Academy | Online Quran Classes">
@@ -2168,6 +2168,275 @@ a{
 
 }
 
+
+
+/* =====================================================
+   STUDENT REVIEWS - AL HAMD STYLE
+===================================================== */
+.reviews-section{
+    background:#ffffff;
+    padding:70px 20px 75px;
+    text-align:center;
+    border-top:1px solid rgba(184,134,11,.18);
+}
+.reviews-container{
+    max-width:1180px;
+    margin:0 auto;
+}
+.reviews-kicker{
+    color:#B8860B;
+    font-size:14px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+.reviews-title{
+    color:#061d43;
+    font-size:38px;
+    font-weight:900;
+    line-height:1.2;
+    margin:0 0 10px;
+}
+.reviews-subtitle{
+    color:#5f6b7a;
+    max-width:760px;
+    margin:0 auto 28px;
+    font-size:15px;
+    line-height:1.7;
+}
+.reviews-heading-line{
+    width:70px;
+    height:3px;
+    background:#FFD700;
+    border-radius:20px;
+    margin:0 auto 32px;
+}
+.reviews-toolbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:30px;
+}
+.leave-review-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    border:0;
+    background:#061d43;
+    color:#fff;
+    padding:13px 25px;
+    border-radius:8px;
+    font-family:inherit;
+    font-size:15px;
+    font-weight:800;
+    cursor:pointer;
+    box-shadow:0 7px 18px rgba(6,29,67,.18);
+    transition:.25s ease;
+}
+.leave-review-btn:hover{
+    background:#B8860B;
+    transform:translateY(-2px);
+}
+.reviews-list{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
+    text-align:left;
+}
+.review-card{
+    background:#fff;
+    border:1px solid #e7eaf0;
+    border-radius:12px;
+    padding:24px 22px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+    transition:.25s ease;
+}
+.review-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(184,134,11,.45);
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+}
+.review-stars{
+    color:#F5B301;
+    font-size:19px;
+    letter-spacing:2px;
+    margin-bottom:14px;
+}
+.review-text{
+    color:#4c5563;
+    font-size:14px;
+    line-height:1.75;
+    min-height:74px;
+    margin-bottom:18px;
+}
+.review-author{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding-top:14px;
+    border-top:1px solid #edf0f4;
+}
+.review-avatar{
+    width:42px;
+    height:42px;
+    min-width:42px;
+    border-radius:50%;
+    background:#061d43;
+    color:#FFD700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:900;
+    font-size:17px;
+}
+.review-author-name{
+    color:#061d43;
+    font-size:15px;
+    font-weight:800;
+}
+.review-author-label{
+    color:#8a929e;
+    font-size:12px;
+    margin-top:2px;
+}
+.review-empty{
+    grid-column:1/-1;
+    color:#6d7683;
+    background:#f8f9fb;
+    border:1px dashed #d7dce4;
+    border-radius:12px;
+    padding:28px 20px;
+    text-align:center;
+}
+.review-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:100000;
+    background:rgba(4,18,42,.72);
+    padding:20px;
+    align-items:center;
+    justify-content:center;
+}
+.review-modal.show{display:flex;}
+.review-modal-box{
+    width:100%;
+    max-width:520px;
+    max-height:90vh;
+    overflow:auto;
+    background:#fff;
+    border-radius:16px;
+    padding:28px;
+    text-align:left;
+    box-shadow:0 20px 55px rgba(0,0,0,.28);
+    position:relative;
+}
+.review-modal-box h3{
+    color:#061d43;
+    font-size:24px;
+    font-weight:900;
+    margin-bottom:6px;
+}
+.review-modal-box > p{
+    color:#6a7380;
+    font-size:13px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+.review-close{
+    position:absolute;
+    top:13px;
+    right:15px;
+    width:34px;
+    height:34px;
+    border:0;
+    border-radius:50%;
+    background:#f0f2f5;
+    color:#061d43;
+    font-size:22px;
+    cursor:pointer;
+}
+.review-form-label{
+    display:block;
+    color:#061d43;
+    font-size:13px;
+    font-weight:800;
+    margin:13px 0 6px;
+}
+.review-form-input,
+.review-form-textarea{
+    width:100%;
+    border:1px solid #d9dee7;
+    border-radius:9px;
+    padding:12px 13px;
+    font-family:inherit;
+    font-size:14px;
+    outline:none;
+}
+.review-form-input:focus,
+.review-form-textarea:focus{
+    border-color:#B8860B;
+    box-shadow:0 0 0 3px rgba(184,134,11,.10);
+}
+.review-form-textarea{resize:vertical;min-height:115px;}
+.review-rating{
+    display:flex;
+    gap:5px;
+    direction:rtl;
+    justify-content:flex-end;
+    width:max-content;
+    margin:4px 0 5px;
+}
+.review-rating input{display:none;}
+.review-rating label{
+    color:#cfd4dc;
+    font-size:31px;
+    cursor:pointer;
+    line-height:1;
+    transition:.15s ease;
+}
+.review-rating label:hover,
+.review-rating label:hover ~ label,
+.review-rating input:checked ~ label{color:#F5B301;}
+.review-submit-btn{
+    width:100%;
+    border:0;
+    border-radius:9px;
+    padding:14px;
+    margin-top:18px;
+    background:#061d43;
+    color:#fff;
+    font-family:inherit;
+    font-size:15px;
+    font-weight:800;
+    cursor:pointer;
+}
+.review-submit-btn:hover{background:#B8860B;}
+.review-message{
+    display:none;
+    margin-top:12px;
+    padding:10px 12px;
+    border-radius:8px;
+    font-size:13px;
+    line-height:1.5;
+}
+.review-message.show{display:block;}
+.review-message.success{background:#eaf8f0;color:#116b3a;}
+.review-message.error{background:#fff0f0;color:#a52626;}
+@media(max-width:900px){
+    .reviews-list{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:600px){
+    .reviews-section{padding:55px 15px 60px;}
+    .reviews-title{font-size:29px;}
+    .reviews-subtitle{font-size:13px;}
+    .reviews-list{grid-template-columns:1fr;}
+    .review-card{padding:21px 18px;}
+    .review-modal-box{padding:24px 18px;}
+}
+
 </style>
 
 </head>
@@ -3320,7 +3589,62 @@ a{
     </form>
 
 </section>
-   <!-- SOCIAL SECTION -->
+   
+
+<!-- =====================================================
+     STUDENT REVIEWS
+===================================================== -->
+<section class="reviews-section" id="student-reviews">
+    <div class="reviews-container">
+        <div class="reviews-kicker">Student Feedback</div>
+        <h2 class="reviews-title">What Our Students Say</h2>
+        <p class="reviews-subtitle">
+            Read experiences shared by our students and parents, or leave your own review about Fatima Islamic Academy.
+        </p>
+        <div class="reviews-heading-line"></div>
+
+        <div class="reviews-toolbar">
+            <button type="button" class="leave-review-btn" onclick="openReviewModal()">
+                ⭐ Leave Us a Review
+            </button>
+        </div>
+
+        <div id="reviewsList" class="reviews-list">
+            <div class="review-empty">Loading reviews...</div>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEW FORM MODAL -->
+<div class="review-modal" id="reviewModal" onclick="closeReviewModalOnBackdrop(event)">
+    <div class="review-modal-box">
+        <button type="button" class="review-close" onclick="closeReviewModal()" aria-label="Close">×</button>
+        <h3>Leave Us a Review</h3>
+        <p>Your feedback helps other families learn about their experience with Fatima Islamic Academy.</p>
+
+        <form id="reviewForm" onsubmit="submitStudentReview(event)">
+            <label class="review-form-label" for="reviewStudentName">Student Name</label>
+            <input class="review-form-input" id="reviewStudentName" type="text" maxlength="80" placeholder="Enter your name" required>
+
+            <label class="review-form-label">Rating</label>
+            <div class="review-rating" aria-label="Choose rating">
+                <input type="radio" id="reviewStar5" name="reviewRating" value="5" required><label for="reviewStar5" title="5 stars">★</label>
+                <input type="radio" id="reviewStar4" name="reviewRating" value="4"><label for="reviewStar4" title="4 stars">★</label>
+                <input type="radio" id="reviewStar3" name="reviewRating" value="3"><label for="reviewStar3" title="3 stars">★</label>
+                <input type="radio" id="reviewStar2" name="reviewRating" value="2"><label for="reviewStar2" title="2 stars">★</label>
+                <input type="radio" id="reviewStar1" name="reviewRating" value="1"><label for="reviewStar1" title="1 star">★</label>
+            </div>
+
+            <label class="review-form-label" for="reviewText">Your Review</label>
+            <textarea class="review-form-textarea" id="reviewText" maxlength="1000" placeholder="Write your experience..." required></textarea>
+
+            <button class="review-submit-btn" id="reviewSubmitBtn" type="submit">Submit Review</button>
+            <div class="review-message" id="reviewMessage"></div>
+        </form>
+    </div>
+</div>
+
+<!-- SOCIAL SECTION -->
 <div class="social-wrapper">
 
 <!-- FACEBOOK -->
@@ -3564,6 +3888,174 @@ a{
 
 
 <script>
+
+
+
+
+/* =====================================================
+   STUDENT REVIEWS -> SUPABASE
+===================================================== */
+
+const FATIMA_SUPABASE_URL = "https://qhaxybaqtwceqvxsftyq.supabase.co";
+const FATIMA_SUPABASE_KEY = "sb_publishable__Q3u9XaP_PCLEggpCeoEDw_jH1H1Mh6";
+
+function openReviewModal(){
+    document.getElementById("reviewModal").classList.add("show");
+    document.body.style.overflow = "hidden";
+}
+
+function closeReviewModal(){
+    document.getElementById("reviewModal").classList.remove("show");
+    document.body.style.overflow = "";
+}
+
+function closeReviewModalOnBackdrop(event){
+    if(event.target.id === "reviewModal"){
+        closeReviewModal();
+    }
+}
+
+function showReviewMessage(message, type){
+    const box = document.getElementById("reviewMessage");
+    box.textContent = message;
+    box.className = "review-message show " + type;
+}
+
+function makeReviewStars(rating){
+    const value = Number(rating) || 0;
+    return "★★★★★".split("").map((star, index) => index < value ? "★" : "☆").join("");
+}
+
+function reviewInitial(name){
+    const clean = (name || "S").trim();
+    return clean ? clean.charAt(0).toUpperCase() : "S";
+}
+
+function renderStudentReviews(reviews){
+    const list = document.getElementById("reviewsList");
+
+    if(!reviews || reviews.length === 0){
+        list.innerHTML = '<div class="review-empty">No reviews yet. Be the first to share your experience.</div>';
+        return;
+    }
+
+    list.innerHTML = reviews.map(function(item){
+        const name = String(item.student_name || "Student");
+        const review = String(item.review || "");
+        const rating = Number(item.rating) || 0;
+
+        return `
+            <article class="review-card">
+                <div class="review-stars" aria-label="${rating} out of 5 stars">${makeReviewStars(rating)}</div>
+                <p class="review-text">${escapeReviewHTML(review)}</p>
+                <div class="review-author">
+                    <div class="review-avatar">${escapeReviewHTML(reviewInitial(name))}</div>
+                    <div>
+                        <div class="review-author-name">${escapeReviewHTML(name)}</div>
+                        <div class="review-author-label">Student / Parent Review</div>
+                    </div>
+                </div>
+            </article>
+        `;
+    }).join("");
+}
+
+function escapeReviewHTML(value){
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+async function loadStudentReviews(){
+    const list = document.getElementById("reviewsList");
+
+    try{
+        const response = await fetch(
+            FATIMA_SUPABASE_URL + "/rest/v1/reviews?select=id,created_at,student_name,rating,review&order=created_at.desc",
+            {
+                method:"GET",
+                headers:{
+                    "apikey": FATIMA_SUPABASE_KEY,
+                    "Authorization": "Bearer " + FATIMA_SUPABASE_KEY
+                }
+            }
+        );
+
+        if(!response.ok){
+            throw new Error("Unable to load reviews");
+        }
+
+        const reviews = await response.json();
+        renderStudentReviews(reviews);
+    }catch(error){
+        list.innerHTML = '<div class="review-empty">Reviews are temporarily unavailable. Please try again shortly.</div>';
+    }
+}
+
+async function submitStudentReview(event){
+    event.preventDefault();
+
+    const nameInput = document.getElementById("reviewStudentName");
+    const textInput = document.getElementById("reviewText");
+    const ratingInput = document.querySelector('input[name="reviewRating"]:checked');
+    const submitButton = document.getElementById("reviewSubmitBtn");
+
+    const studentName = nameInput.value.trim();
+    const reviewText = textInput.value.trim();
+    const rating = ratingInput ? Number(ratingInput.value) : 0;
+
+    if(!studentName || !reviewText || rating < 1 || rating > 5){
+        showReviewMessage("Please enter your name, select a rating, and write your review.", "error");
+        return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
+    try{
+        const response = await fetch(
+            FATIMA_SUPABASE_URL + "/rest/v1/reviews",
+            {
+                method:"POST",
+                headers:{
+                    "apikey": FATIMA_SUPABASE_KEY,
+                    "Authorization": "Bearer " + FATIMA_SUPABASE_KEY,
+                    "Content-Type": "application/json",
+                    "Prefer": "return=representation"
+                },
+                body:JSON.stringify({
+                    student_name: studentName,
+                    rating: rating,
+                    review: reviewText
+                })
+            }
+        );
+
+        if(!response.ok){
+            const errorData = await response.text();
+            throw new Error(errorData || "Unable to save review");
+        }
+
+        document.getElementById("reviewForm").reset();
+        showReviewMessage("Thank you! Your review has been saved successfully.", "success");
+        await loadStudentReviews();
+
+        setTimeout(function(){
+            closeReviewModal();
+            document.getElementById("reviewMessage").className = "review-message";
+        }, 1200);
+    }catch(error){
+        showReviewMessage("Your review could not be saved right now. Please try again.", "error");
+    }finally{
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Review";
+    }
+}
+
+window.addEventListener("DOMContentLoaded", loadStudentReviews);
 
 
 /* =====================================================
