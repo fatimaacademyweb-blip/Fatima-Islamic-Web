@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Fatima Islamic Academy | Online Quran Classes</title>
 <meta name="description" content="Fatima Islamic Academy — online Quran, Tajweed, Hifz, Tafseer, Arabic and Islamic Studies for kids and adults.">
-<link rel="icon" href="logo.jpg.jpg">
+<link rel="icon" type="image/jpeg" href="logo.jpg.jpg">
+<link rel="apple-touch-icon" href="logo.jpg.jpg">
+<meta name="theme-color" content="#0a2638">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0a2638;--ink2:#10394c;--green:#087653;--green2:#0e9367;--gold:#d5a83a;--cream:#faf8f2;--line:#e5e9e7;--muted:#65757d;--white:#fff;--shadow:0 14px 40px rgba(10,38,56,.09)}
+:root{--ink:#0a2638;--ink2:#10394c;--green:#0b5c8e;--green2:#1479b3;--gold:#d5a83a;--cream:#faf8f2;--line:#e5e9e7;--muted:#65757d;--white:#fff;--shadow:0 14px 40px rgba(10,38,56,.09)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:"DM Sans",sans-serif;color:#18303b;background:var(--cream);line-height:1.65}
@@ -122,6 +124,7 @@ footer a:hover{color:#f0c65c}
 .float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;z-index:1500;box-shadow:0 8px 22px rgba(0,0,0,.25);font-weight:900}
 
 @media(max-width:900px){
+.hero-art{display:none}
 .links{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;padding:18px 5%;flex-direction:column;align-items:stretch;box-shadow:0 12px 25px rgba(0,0,0,.1)}
 .links.open{display:flex} .menu{display:block}
 .hero-grid,.provide-row,.provide-row.reverse,.personal-box{grid-template-columns:1fr}
@@ -157,6 +160,19 @@ footer a:hover{color:#f0c65c}
 .payment-image{display:block;width:min(430px,90%);max-height:230px;object-fit:contain;margin:10px auto 28px}
 @keyframes pageSlide{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
 @keyframes cardSlide{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:translateX(0)}}
+@keyframes textSlideIn{
+  from{opacity:0;transform:translate3d(-70px,0,0)}
+  to{opacity:1;transform:translate3d(0,0,0)}
+}
+@keyframes textSlideUp{
+  from{opacity:0;transform:translate3d(0,35px,0)}
+  to{opacity:1;transform:translate3d(0,0,0)}
+}
+.slide-text{opacity:0;will-change:transform,opacity}
+.slide-text.show-left{animation:textSlideIn .85s cubic-bezier(.16,1,.3,1) forwards}
+.slide-text.show-right{animation:textSlideIn .85s cubic-bezier(.16,1,.3,1) forwards}
+.hero .slide-text.show-left,.hero .slide-text.show-right{animation-name:textSlideIn}
+.hero .hero-actions.show-left,.hero .hero-actions.show-right{animation-name:textSlideUp}
 @media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}.price-page{padding:55px 0}}
 
@@ -270,7 +286,7 @@ footer a:hover{color:#f0c65c}
   <a class="social fb" href="https://www.facebook.com/share/19KuiZFbmc/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z"/></svg>
   </a>
-  <a class="social ig" href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+  <a class="social ig" href="#" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 1.9A3.3 3.3 0 0 0 4.1 7.2v9.6a3.3 3.3 0 0 0 3.1 3.3h9.6a3.3 3.3 0 0 0 3.3-3.3V7.2a3.3 3.3 0 0 0-3.3-3.3H7.2Zm9.9 1.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.9A3.1 3.1 0 1 0 12 15a3.1 3.1 0 0 0 0-6.1Z"/></svg>
   </a>
  </div>
@@ -336,16 +352,53 @@ footer a:hover{color:#f0c65c}
 </div>
   <div><h3>Help Center</h3><a href="https://wa.me/923130934215" target="_blank" rel="noopener">WhatsApp: +92 313 0934215</a><p>Email: www.fatima.islamic.academy@gmail.com</p><a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank" rel="noopener">Instagram: @fatima.islamic.academy</a></div>
  </div>
- <div class="payment"><img src="payment.jpg.jpg.jpg" alt="Payment Methods"></div>
+ <div class="payment"><img src="payment.jpg.jpg..jpg" alt="Payment Methods"></div>
  <div class="copy">© 2026 Fatima Islamic Academy</div>
 </footer>
 
-<a class="float" href="https://wa.me/923130934215" target="_blank" rel="noopener" aria-label="WhatsApp">
+<a class="float" href="https://wa.me/923130934215?text=Assalamu%20Alaikum%2C%0A%0AI%20would%20like%20to%20join%20Quran%20classes%20with%20Fatima%20Islamic%20Academy.%20Please%20share%20course%20details%20and%20information%20regarding%20your%20free%20trial%20classes.%0A%0AJazakAllah." target="_blank" rel="noopener" aria-label="WhatsApp">
 <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
  <path fill="currentColor" d="M16 3.2a12.7 12.7 0 0 0-10.9 19l-1.3 5 5.1-1.3A12.8 12.8 0 1 0 16 3.2Zm0 23.1a10.3 10.3 0 0 1-5.3-1.5l-.4-.2-3 .8.8-2.9-.2-.4A10.2 10.2 0 1 1 16 26.3Zm5.7-7.7c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.5-.7-2.5-1.2-3.5-2.7-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.3c.2.2 2.3 3.5 5.6 4.8.8.3 1.4.5 1.9.6.8.2 1.5.2 2 .1.6-.1 1.7-.7 2-1.3.2-.6.2-1.2.1-1.3-.1-.2-.3-.3-.6-.4Z"/>
 </svg></a>
 
 <script>
+document.addEventListener("DOMContentLoaded",function(){
+  const heroTargets=document.querySelectorAll(".hero .kicker,.hero h1,.hero p,.hero-actions");
+  heroTargets.forEach((el,i)=>{
+    el.classList.add("slide-text","show-left");
+    el.style.animationDelay=(i*0.16)+"s";
+  });
+
+  const targets=document.querySelectorAll(
+    "section:not(.hero) h1,section:not(.hero) h2,section:not(.hero) h3,section:not(.hero) p,"+
+    "section:not(.hero) .kicker,section:not(.hero) .hero-actions .btn,section:not(.hero) .course a,"+
+    "section:not(.hero) .stat b,section:not(.hero) .stat span,section:not(.hero) summary,footer a,footer p"
+  );
+
+  targets.forEach((el,i)=>{
+    el.classList.add("slide-text","show-left");
+    el.style.animationDelay=((i%5)*0.09)+"s";
+  });
+
+  if("IntersectionObserver" in window){
+    const observer=new IntersectionObserver((entries,obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("show-left");
+          obs.unobserve(entry.target);
+        }
+      });
+    },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+
+    targets.forEach(el=>{
+      el.classList.remove("show-left");
+      observer.observe(el);
+    });
+  }else{
+    targets.forEach(el=>el.classList.add("show-left"));
+  }
+});
+
 function sendForm(e){
  e.preventDefault();
  const f=new FormData(e.target);
