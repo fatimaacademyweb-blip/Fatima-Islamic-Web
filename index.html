@@ -142,6 +142,25 @@ footer a:hover{color:#f0c65c}
 .personal-box{padding:28px}
 .cta h2{font-size:34px}
 }
+
+.price-page{display:none;background:linear-gradient(120deg,#f9f6ec 0%,#fff 50%,#eaf4ef 100%);padding:80px 0;min-height:70vh}
+.price-page:target{display:block;animation:pageSlide .65s ease both}
+.price-inner{text-align:center;max-width:1000px;margin:auto}
+.price-inner h2{font:800 clamp(38px,5vw,58px)/1.1 "Playfair Display";color:var(--ink);margin:10px 0 12px}
+.price-intro{max-width:700px;margin:0 auto 35px;color:var(--muted)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:0 auto 35px}
+.price-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:25px;box-shadow:var(--shadow);text-align:left;animation:cardSlide .7s ease both}
+.price-card:nth-child(2){animation-delay:.08s}.price-card:nth-child(3){animation-delay:.16s}.price-card:nth-child(4){animation-delay:.24s}.price-card:nth-child(5){animation-delay:.32s}
+.price-card h3{font:700 21px "Playfair Display";color:var(--ink);min-height:55px}
+.price{font:800 22px "Playfair Display";color:var(--green);margin:12px 0 5px}
+.price-card p{font-size:14px;color:var(--muted)}
+.payment-image{display:block;width:min(430px,90%);max-height:230px;object-fit:contain;margin:10px auto 28px}
+@keyframes pageSlide{from{opacity:0;transform:translateY(35px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cardSlide{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:translateX(0)}}
+@media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.price-grid{grid-template-columns:1fr}.price-page{padding:55px 0}}
+
+.reveal-on-load{animation:pageSlide .8s ease both}
 </style>
 </head>
 <body>
@@ -164,7 +183,7 @@ footer a:hover{color:#f0c65c}
   </div>
 </div></nav>
 
-<header class="hero" id="home"><div class="container hero-grid">
+<header class="hero reveal-on-load" id="home"><div class="container hero-grid">
  <div>
   <div class="kicker">Fatima Islamic Academy</div>
   <h1>Let's Learn <span>Together</span></h1>
@@ -174,7 +193,7 @@ footer a:hover{color:#f0c65c}
  <div class="hero-art"><img src="logo.jpg.jpg" alt="Fatima Islamic Academy"></div>
 </div></header>
 
-<section class="section" id="courses"><div class="container">
+<section class="section reveal-on-load" id="courses"><div class="container">
  <div class="heading"><div class="kicker">Learn, Reflect, and Grow in Faith</div><h2>Featured Courses</h2><p>Embark on online courses designed to help you learn, grow, and apply knowledge for both this life and the Hereafter.</p></div>
  <div class="feature-grid">
   <article class="course"><img src="quran.jpg.jpg" alt="Tajweed"><div class="course-body"><h3>Tajweed Masterclass</h3><p>Learn correct pronunciation of Arabic letters with Tajweed and Makharij rules.</p><a href="#contact">Start Learning →</a></div></article>
@@ -183,7 +202,27 @@ footer a:hover{color:#f0c65c}
  </div>
 </div></section>
 
-<section class="section stats" id="pricing"><div class="container">
+
+<section class="price-page" id="pricing">
+  <div class="container">
+    <div class="price-inner">
+      <div class="kicker">Fatima Islamic Academy</div>
+      <h2>Course Pricing</h2>
+      <p class="price-intro">Choose the course that best fits your learning goals. Contact us for your suitable schedule and enrollment details.</p>
+      <div class="price-grid">
+        <div class="price-card"><h3>Noorani Qaida</h3><div class="price">Contact Us</div><p>Foundation for Quran reading and pronunciation.</p></div>
+        <div class="price-card"><h3>Quran Reading with Tajweed</h3><div class="price">Contact Us</div><p>Improve recitation with Tajweed and Makharij.</p></div>
+        <div class="price-card"><h3>Quran Memorization - Hifz</h3><div class="price">Contact Us</div><p>Structured memorization and revision support.</p></div>
+        <div class="price-card"><h3>Tafsir & Islamic Studies</h3><div class="price">Contact Us</div><p>Learn Quranic meanings and Islamic knowledge.</p></div>
+        <div class="price-card"><h3>Arabic & Quranic Arabic</h3><div class="price">Contact Us</div><p>Build Arabic skills for better Quran understanding.</p></div>
+      </div>
+      <img class="payment-image" src="payment.jpg.jpg..jpg" alt="Payment Methods">
+      <a class="btn primary" href="#contact">Book Free Evaluation</a>
+    </div>
+  </div>
+</section>
+
+<section class="section stats reveal-on-load" id="progress"><div class="container">
  <div class="heading"><div class="kicker" style="color:#f0c65c">Our Progress</div><h2>Progress & Achievements</h2><p style="color:#cbdadd">Our academy is focused on consistent, quality online learning.</p></div>
  <div class="stats-grid">
   <div class="stat"><b>100%</b><span>Student Focus</span></div>
@@ -279,7 +318,17 @@ footer a:hover{color:#f0c65c}
  <div class="container footer-grid">
   <div><div class="footer-brand"><img src="logo.jpg.jpg" alt="Fatima Islamic Academy"><span>Fatima Islamic Academy</span></div><p>Online Quran learning for kids and adults with flexible, focused and personalized classes.</p></div>
   <div><h3>Discover</h3><a href="#about">About Us</a><a href="#reviews">Testimonials</a><a href="#faq">FAQs</a><a href="#contact">Contact Us</a></div>
-  <div><h3>Courses</h3><a href="#courses">Tajweed</a><a href="#courses">Quran Memorization</a><a href="#courses">Noorani Qaida</a><a href="#courses">Arabic & Islamic Studies</a></div>
+  <div><h3>Courses</h3>
+<a href="#courses">Learn Noorani Qaida Online</a>
+<a href="#courses">Quran Reading with Tajweed</a>
+<a href="#courses">Memorize Quran Online - Hifz</a>
+<a href="#courses">Learn Tafsir Online</a>
+<a href="#courses">Learn Arabic Online</a>
+<a href="#courses">Learn Islamic Studies Online</a>
+<a href="#courses">Taleem ul Islam</a>
+<a href="#courses">Quran Translation Course</a>
+<a href="#courses">Quranic Arabic Course</a>
+</div>
   <div><h3>Help Center</h3><a href="https://wa.me/923130934215" target="_blank" rel="noopener">WhatsApp: +92 313 0934215</a><p>Email: www.fatima.islamic.academy@gmail.com</p><a href="https://www.instagram.com/fatima.islamic.academy?utm_source=qr&igsh=MXBjbm1rZDVtMmU5Mw==" target="_blank" rel="noopener">Instagram: @fatima.islamic.academy</a></div>
  </div>
  <div class="payment"><img src="payment.jpg.jpg.jpg" alt="Payment Methods"></div>
