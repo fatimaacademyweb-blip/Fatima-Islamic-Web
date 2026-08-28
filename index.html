@@ -165,7 +165,7 @@ footer a:hover{color:#f0c65c}
 }
 .achievement-grid{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
 .achievement-card{
@@ -222,6 +222,7 @@ footer a:hover{color:#f0c65c}
 .achievement-icon.teachers{background:#ee9b05;color:#fff}
 .achievement-icon.countries{background:#e62e59;color:#fff}
 .achievement-icon.experience{background:#246bce;color:#fff}
+.achievement-icon.satisfaction{background:#62a51d;color:#fff}
 .achievement-card strong{
   display:block;
   font:800 42px/1.05 "DM Sans",sans-serif;
@@ -881,6 +882,16 @@ footer a:hover{color:#f0c65c}
           </svg>
         </div>
         <strong><span class="counter" data-target="5">0</span><span class="counter-plus">+</span></strong><span>Years Experience</span>
+      </article>
+      <article class="achievement-card">
+        <div class="achievement-icon satisfaction" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M8 36V27M18 36V21M28 36V16M38 36V10" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="m8 21 9-6 10 4 13-11" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m34 8 6 0-1 6" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <strong><span class="counter" data-target="95">0</span><span class="counter-plus">%</span><span class="counter-plus">+</span></strong><span>Satisfaction Rate</span>
       </article>
     </div>
   </div>
