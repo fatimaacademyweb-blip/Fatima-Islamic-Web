@@ -165,7 +165,7 @@ footer a:hover{color:#f0c65c}
 }
 .achievement-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:20px;
 }
 .achievement-card{
@@ -221,6 +221,7 @@ footer a:hover{color:#f0c65c}
 .achievement-icon.courses{background:#3478e5;color:#fff}
 .achievement-icon.teachers{background:#ee9b05;color:#fff}
 .achievement-icon.countries{background:#e62e59;color:#fff}
+.achievement-icon.experience{background:#246bce;color:#fff}
 .achievement-card strong{
   display:block;
   font:800 42px/1.05 "DM Sans",sans-serif;
@@ -235,6 +236,9 @@ footer a:hover{color:#f0c65c}
   font-size:17px;
   color:#4f5968;
   font-weight:500;
+}
+@media(max-width:1100px){
+  .achievement-grid{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:900px){
   .achievement-grid{grid-template-columns:repeat(2,1fr)}
@@ -315,6 +319,85 @@ footer a:hover{color:#f0c65c}
 .cta h2{font-size:34px}
 }
 
+
+/* ===== Professional Services Section ===== */
+.services{background:#f7fafb}
+.services .heading{margin-bottom:34px}
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  max-width:980px;
+  margin:0 auto;
+}
+.service-card{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  align-items:start;
+  gap:13px;
+  background:#fff;
+  border:1px solid #e2e8eb;
+  border-radius:11px;
+  padding:17px 18px;
+  min-height:118px;
+  box-shadow:0 7px 22px rgba(10,38,56,.06);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.service-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(10,38,56,.11);
+  border-color:#cfdde4;
+}
+.service-icon{
+  width:48px;
+  height:48px;
+  border-radius:9px;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+}
+.service-icon svg{width:27px;height:27px;display:block}
+.quran-icon{background:#dff4f1;color:#168f88}
+.islamic-icon{background:#fff0df;color:#d87521}
+.timing-icon{background:#e6efff;color:#246bce}
+.teacher-icon{background:#f0e6ff;color:#9254cc}
+.character-icon{background:#ffe5ec;color:#d34c72}
+.excellence-icon{background:#e1f3f6;color:#1e8ca5}
+.service-card h3{
+  font:700 16px "DM Sans",sans-serif;
+  color:var(--ink);
+  margin:1px 0 5px;
+}
+.service-card p{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.5;
+  margin:0;
+}
+.services-action{
+  text-align:center;
+  margin-top:24px;
+}
+.services-action .btn{
+  padding:11px 21px;
+  border-radius:6px;
+  box-shadow:0 7px 18px rgba(11,92,142,.15);
+}
+.services-action .btn span{margin-left:7px}
+.services-action p{
+  color:#87969d;
+  font-size:12px;
+  margin-top:9px;
+}
+@media(max-width:1000px){
+  .services-grid{grid-template-columns:repeat(2,1fr);max-width:760px}
+}
+@media(max-width:600px){
+  .services{padding:58px 0}
+  .services-grid{grid-template-columns:1fr;gap:12px}
+  .service-card{min-height:105px;padding:16px}
+}
+
 .price-page{display:none;background:linear-gradient(120deg,#f9f6ec 0%,#fff 50%,#eaf4ef 100%);padding:80px 0;min-height:70vh}
 .price-page:target{display:block;animation:pageSlide .65s ease both}
 .price-inner{text-align:center;max-width:1000px;margin:auto}
@@ -346,6 +429,247 @@ footer a:hover{color:#f0c65c}
 @media(max-width:600px){.price-grid{grid-template-columns:1fr}.price-page{padding:55px 0}}
 
 .reveal-on-load{animation:pageSlide .8s ease both}
+
+/* ===== Why Choose Us — Professional Section ===== */
+.why-choose{
+  background:#f7fafb;
+  padding:78px 0 82px;
+  border-top:1px solid var(--line);
+}
+.why-choose .heading{max-width:760px;margin:0 auto 40px}
+.why-choose .heading .kicker{color:var(--green)}
+.why-choose .heading h2{
+  color:var(--ink);
+  font:800 clamp(34px,5vw,52px)/1.1 "Playfair Display";
+  margin:9px 0 13px;
+}
+.why-choose .heading h2::after{
+  content:"";
+  display:block;
+  width:58px;
+  height:3px;
+  background:var(--gold);
+  border-radius:10px;
+  margin:12px auto 0;
+}
+.why-choose .heading p{color:var(--muted);font-size:15px}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  max-width:1080px;
+  margin:0 auto;
+}
+.why-card{
+  position:relative;
+  background:#fff;
+  border:1px solid #e3e9ec;
+  border-radius:12px;
+  min-height:188px;
+  padding:25px 18px 22px;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(10,38,56,.055);
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1),
+             box-shadow .28s ease,border-color .28s ease;
+}
+.why-card.show{opacity:1;transform:translateY(0)}
+.why-card::after{
+  content:"";
+  position:absolute;
+  left:22px;right:22px;bottom:0;
+  height:3px;
+  background:var(--gold);
+  border-radius:4px 4px 0 0;
+  transform:scaleX(.55);
+  transition:transform .28s ease;
+}
+.why-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 16px 34px rgba(10,38,56,.12);
+  border-color:#d5e0e5;
+}
+.why-card:hover::after{transform:scaleX(1)}
+.why-icon{
+  width:52px;height:52px;
+  margin:0 auto 15px;
+  border-radius:11px;
+  display:grid;
+  place-items:center;
+}
+.why-icon svg{width:28px;height:28px;display:block}
+.why-icon.fee{background:#e1f3f2;color:#168f88}
+.why-icon.language{background:#e4efff;color:#3478e5}
+.why-icon.one{background:#fff0df;color:#d87521}
+.why-icon.substitute{background:#ffe6ea;color:#c9364f}
+.why-icon.payment{background:#e5f4fb;color:#1786a7}
+.why-icon.global{background:#e8efff;color:#246bce}
+.why-icon.progress{background:#fff2d8;color:#d58b00}
+.why-icon.portal{background:#f0e8ff;color:#7b50c5}
+.why-card h3{
+  font:700 15px "DM Sans",sans-serif;
+  letter-spacing:.2px;
+  text-transform:uppercase;
+  color:var(--ink);
+  margin-bottom:7px;
+}
+.why-card p{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.55;
+  max-width:190px;
+  margin:0 auto;
+}
+@media(max-width:1000px){.why-grid{grid-template-columns:repeat(2,1fr);max-width:760px}}
+@media(max-width:600px){
+  .why-choose{padding:58px 0 64px}
+  .why-choose .heading{margin-bottom:30px}
+  .why-choose .heading h2{font-size:38px}
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .why-card{min-height:178px;padding:21px 10px 20px;border-radius:12px}
+  .why-icon{width:50px;height:50px;margin-bottom:13px}
+  .why-icon svg{width:26px;height:26px}
+  .why-card h3{font-size:12px;line-height:1.35}
+  .why-card p{font-size:11px;line-height:1.45}
+}
+@media(max-width:390px){.why-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  .why-card{opacity:1;transform:none;transition:none}
+}
+
+
+/* ===== Meet Our Teachers — Professional Section ===== */
+.teachers-section{
+  background:#ffffff;
+  padding:78px 0 82px;
+  border-top:1px solid var(--line);
+}
+.teachers-section .heading{max-width:760px;margin:0 auto 40px}
+.teachers-section .heading .kicker{color:var(--green)}
+.teachers-section .heading h2{
+  color:var(--ink);
+  font:800 clamp(34px,5vw,52px)/1.1 "Playfair Display";
+  margin:9px 0 13px;
+}
+.teachers-section .heading h2::after{
+  content:"";
+  display:block;
+  width:58px;
+  height:3px;
+  background:var(--gold);
+  border-radius:10px;
+  margin:12px auto 0;
+}
+.teachers-section .heading p{
+  color:var(--muted);
+  font-size:15px;
+  max-width:700px;
+  margin:0 auto;
+}
+.teacher-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  max-width:1080px;
+  margin:0 auto;
+}
+.teacher-card{
+  position:relative;
+  background:#fff;
+  border:1px solid #e2e9ed;
+  border-radius:14px;
+  padding:30px 24px 27px;
+  text-align:center;
+  min-height:275px;
+  box-shadow:0 9px 28px rgba(10,38,56,.055);
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1),
+             box-shadow .28s ease,border-color .28s ease;
+}
+.teacher-card.show{opacity:1;transform:translateY(0)}
+.teacher-card::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--green),var(--gold));
+}
+.teacher-card::after{
+  content:"";
+  position:absolute;
+  left:28px;right:28px;bottom:0;
+  height:3px;
+  background:var(--gold);
+  border-radius:4px 4px 0 0;
+  transform:scaleX(.45);
+  transition:transform .28s ease;
+}
+.teacher-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 17px 36px rgba(10,38,56,.12);
+  border-color:#d3dfe4;
+}
+.teacher-card:hover::after{transform:scaleX(1)}
+.teacher-icon{
+  width:58px;
+  height:58px;
+  margin:0 auto 17px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+}
+.teacher-icon svg{width:30px;height:30px}
+.teacher-icon.online{background:#e1f3f2;color:#168f88}
+.teacher-icon.male{background:#e4efff;color:#3478e5}
+.teacher-icon.female{background:#fff0df;color:#d87521}
+.teacher-card h3{
+  color:var(--ink);
+  font:700 17px/1.35 "DM Sans",sans-serif;
+  margin:0 0 11px;
+}
+.teacher-card .teacher-line{
+  width:42px;height:2px;
+  margin:0 auto 14px;
+  background:var(--gold);
+  border-radius:5px;
+}
+.teacher-card p{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.65;
+  max-width:275px;
+  margin:0 auto 18px;
+}
+.teacher-link{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  color:var(--green);
+  font-size:13px;
+  font-weight:700;
+  text-decoration:none;
+  transition:gap .25s ease,color .25s ease;
+}
+.teacher-link:hover{gap:11px;color:var(--ink)}
+.teacher-link span{font-size:17px;line-height:1}
+@media(max-width:800px){
+  .teacher-grid{grid-template-columns:1fr;max-width:560px}
+  .teacher-card{min-height:245px}
+}
+@media(max-width:600px){
+  .teachers-section{padding:58px 0 64px}
+  .teachers-section .heading{margin-bottom:30px}
+  .teachers-section .heading h2{font-size:38px}
+  .teacher-card{padding:27px 19px 25px}
+}
+@media(prefers-reduced-motion:reduce){
+  .teacher-card{opacity:1;transform:none;transition:none}
+}
+
 </style>
 </head>
 <body>
@@ -360,6 +684,7 @@ footer a:hover{color:#f0c65c}
   <button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
   <div class="links">
     <a href="#courses">Courses</a>
+    <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
     <a href="#about">About Us</a>
     <a href="#faq">FAQ</a>
@@ -387,6 +712,104 @@ footer a:hover{color:#f0c65c}
  </div>
 </div></section>
 
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="heading">
+      <div class="kicker">What We Offer</div>
+      <h2>Our Services</h2>
+      <p>Comprehensive Islamic education with flexible, personalized learning designed around every student's needs.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon quran-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M8 10.5C8 8.6 9.6 7 11.5 7H22c2.8 0 5 2.2 5 5v27c0-2.2-2.2-4-5-4H11.5A3.5 3.5 0 0 0 8 38.5v-28Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M40 10.5C40 8.6 38.4 7 36.5 7H28c-2.8 0-5 2.2-5 5v27c0-2.2 2.2-4 5-4h8.5a3.5 3.5 0 0 1 3.5 3.5v-28Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M15 14h7M15 19h7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Quran Recitation</h3>
+          <p>Learn proper Tajweed and beautiful Quran recitation with focused instruction.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon islamic-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M12 39c.8-7 5.4-11 12-11s11.2 4 12 11" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M35 7v8M31 11h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Islamic Studies</h3>
+          <p>Build strong Islamic knowledge through lessons covering faith, manners and essential teachings.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon timing-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="25" r="14" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M24 17v8l5 3" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 7h10" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Flexible Timing</h3>
+          <p>Morning, evening or weekend classes that fit comfortably around your schedule.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon teacher-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="16" r="7" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M11 39c1-7.2 5.6-11 13-11s12 3.8 13 11" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="m35 28 1.8 3.8 4.2.6-3 2.9.7 4.2-3.7-2-3.7 2 .7-4.2-3-2.9 4.2-.6L35 28Z" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Qualified Teachers</h3>
+          <p>Learn from dedicated tutors who provide personal attention and support student progress.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon character-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M24 38s-13-7.4-13-17.2C11 15.7 14.5 13 18.2 13c2.4 0 4.7 1.2 5.8 3.2 1.1-2 3.4-3.2 5.8-3.2 3.7 0 7.2 2.7 7.2 7.8C37 30.6 24 38 24 38Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Character Building</h3>
+          <p>Develop Islamic character, good manners and strong values alongside Quran learning.</p>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon excellence-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="m24 7 4.3 8.7 9.7 1.4-7 6.8 1.7 9.6-8.7-4.6-8.7 4.6 1.7-9.6-7-6.8 9.7-1.4L24 7Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M18 39h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3>Excellence Program</h3>
+          <p>Advanced support for deeper understanding, consistent progress and stronger Islamic learning.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="services-action">
+      <a class="btn primary" href="#contact">Explore All Services <span aria-hidden="true">→</span></a>
+      <p>Begin your Islamic learning journey today.</p>
+    </div>
+  </div>
+</section>
 
 <section class="price-page" id="pricing">
   <div class="container">
@@ -450,10 +873,187 @@ footer a:hover{color:#f0c65c}
         </div>
         <strong><span class="counter" data-target="50">0</span><span class="counter-plus">+</span></strong><span>Countries</span>
       </article>
+      <article class="achievement-card">
+        <div class="achievement-icon experience" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="3"/>
+            <path d="M24 14v10l7 5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <strong><span class="counter" data-target="5">0</span><span class="counter-plus">+</span></strong><span>Years Experience</span>
+      </article>
     </div>
   </div>
 </section>
 
+
+
+<!-- ===== Why Choose Us ===== -->
+<section class="why-choose" id="why-choose">
+  <div class="container">
+    <div class="heading">
+      <div class="kicker">Why Fatima Islamic Academy</div>
+      <h2>Why Choose Us</h2>
+      <p>Discover what makes our online learning experience supportive, flexible and focused on every student's progress.</p>
+    </div>
+
+    <div class="why-grid">
+      <article class="why-card">
+        <div class="why-icon fee" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M9 13h30v22H9z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M9 18h30M15 27h7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="32" cy="29" r="3" stroke="currentColor" stroke-width="2.4"/>
+          </svg>
+        </div>
+        <h3>Affordable Fee</h3>
+        <p>Budget-friendly learning options designed for families.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon language" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M8 10h32v21H8z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M17 39h14M24 31v8M15 17h12M15 22h8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M30 17h5M32.5 14v3M29 25c2.2-1.6 4.2-4 5.3-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Multilingual Tutors</h3>
+        <p>Supportive tutors for students from different language backgrounds.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon one" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="19" cy="17" r="6" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M8 37c.8-6.2 4.5-10 11-10s10.2 3.8 11 10" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="35" cy="18" r="4.5" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M32 29c4.8.5 7.4 3.2 8 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>One-on-One Classes</h3>
+        <p>Focused personal attention in every online session.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon substitute" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M11 39c1-7.2 5.6-11 13-11s12 3.8 13 11" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="m34 28 2 4 4.4.6-3.2 3.1.8 4.3-4-2.1-4 2.1.8-4.3-3.2-3.1L32 32l2-4Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Substitute Teachers</h3>
+        <p>A dedicated support option to help maintain learning continuity.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon payment" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="7" y="11" width="34" height="26" rx="4" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M7 18h34M13 29h9" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="33" cy="29" r="3" stroke="currentColor" stroke-width="2.4"/>
+          </svg>
+        </div>
+        <h3>Easy Online Payments</h3>
+        <p>Simple payment arrangements for convenient online learning.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon global" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M8 24h32M24 8c4.2 4.5 6.2 10 6.2 16S28.2 35.5 24 40c-4.2-4.5-6.2-10-6.2-16S19.8 12.5 24 8Z" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M12 15h24M12 33h24" stroke="currentColor" stroke-width="1.8" opacity=".8"/>
+          </svg>
+        </div>
+        <h3>Global Reputation</h3>
+        <p>Built for an international community of online learners.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon progress" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M9 36V22M19 36V15M29 36V19M39 36V10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="m9 16 8-6 10 5 12-9" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Progress Report</h3>
+        <p>Track learning development with clear progress updates.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="why-icon portal" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="15" stroke="currentColor" stroke-width="2.8"/>
+            <circle cx="24" cy="24" r="5" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M24 9v6M24 33v6M9 24h6M33 24h6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Online Portal</h3>
+        <p>Organized access to learning records, schedules and support.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Meet Our Teachers ===== -->
+<section class="teachers-section" id="teachers">
+  <div class="container">
+    <div class="heading">
+      <div class="kicker">Our Teaching Team</div>
+      <h2>Meet Our Teachers</h2>
+      <p>Our dedicated Quran teachers provide personalized education with knowledge, care and a focus on each student's learning journey.</p>
+    </div>
+
+    <div class="teacher-grid">
+      <article class="teacher-card">
+        <div class="teacher-icon online" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M8 11h32v22H8z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+            <path d="M17 39h14M24 33v6" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M18 17h12M18 22h12M18 27h7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Online Quran Teachers</h3>
+        <div class="teacher-line"></div>
+        <p>Experienced tutors dedicated to Quranic education, Tajweed and effective online learning.</p>
+        <a class="teacher-link" href="#contact">Learn More <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="teacher-card">
+        <div class="teacher-icon male" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="16" r="7" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M11 39c.9-7.1 5.5-11 13-11s12.1 3.9 13 11" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M31 8h8v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m39 8-8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Male Quran Teachers</h3>
+        <div class="teacher-line"></div>
+        <p>Qualified male instructors providing structured Quran learning for students of different ages and levels.</p>
+        <a class="teacher-link" href="#contact">Learn More <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="teacher-card">
+        <div class="teacher-icon female" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="16" r="7" stroke="currentColor" stroke-width="2.8"/>
+            <path d="M11 39c.9-7.1 5.5-11 13-11s12.1 3.9 13 11" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M18 11c1.4-4 4.2-6 8-6 3.6 0 6.6 2.2 7.8 5.6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M15 14c1.2 5 3.5 8 9 8s7.8-3 9-8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Female Quran Teachers</h3>
+        <div class="teacher-line"></div>
+        <p>Dedicated female tutors offering personalized guidance in a comfortable online learning environment.</p>
+        <a class="teacher-link" href="#contact">Learn More <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="section"><div class="container">
  <div class="heading"><div class="kicker">How To Start Classes</div><h2>Begin Your Learning Journey</h2><p>Three simple steps to get started.</p></div>
@@ -650,6 +1250,56 @@ document.addEventListener("DOMContentLoaded",function(){
     });
   }else{
     targets.forEach(el=>el.classList.add("show-left"));
+  }
+});
+
+
+/* Why Choose Us card reveal */
+document.addEventListener("DOMContentLoaded",function(){
+  const whyCards=document.querySelectorAll(".why-card");
+  if(!whyCards.length) return;
+
+  if("IntersectionObserver" in window){
+    const whyObserver=new IntersectionObserver((entries,obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    },{threshold:.12,rootMargin:"0px 0px -35px 0px"});
+
+    whyCards.forEach((card,i)=>{
+      card.style.transitionDelay=(i*0.07)+"s";
+      whyObserver.observe(card);
+    });
+  }else{
+    whyCards.forEach(card=>card.classList.add("show"));
+  }
+});
+
+
+/* Meet Our Teachers card reveal */
+document.addEventListener("DOMContentLoaded",function(){
+  const teacherCards=document.querySelectorAll(".teacher-card");
+  if(!teacherCards.length) return;
+
+  if("IntersectionObserver" in window){
+    const teacherObserver=new IntersectionObserver((entries,obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    },{threshold:.12,rootMargin:"0px 0px -35px 0px"});
+
+    teacherCards.forEach((card,i)=>{
+      card.style.transitionDelay=(i*0.09)+"s";
+      teacherObserver.observe(card);
+    });
+  }else{
+    teacherCards.forEach(card=>card.classList.add("show"));
   }
 });
 
